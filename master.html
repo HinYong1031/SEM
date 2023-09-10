@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-pink-100">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,34 +12,39 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>MasterPage</title>
     <div class="max-w-full mx-auto">
-        <nav class="border-green-200 max-w-full">
-            <a href="#" class="flex max-w-full bg-pink-100 p-0 m-0">
-                <img class="scale-50 h-auto max-w-xs mx-auto" src="/img/tarumt.png" alt="Tunku Abdul Rahman University of Management and Technology">
-            </a>
-            <div class="bg-pink-900">
-                <div class="container max-w-2xl mx-auto flex flex-wrap items-center justify-between">
-                    <button data-collapse-toggle="mobile-menu" type="button" class="md:hidden ml-3 text-pink-100 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center" aria-controls="mobile-menu-2" aria-expanded="false">
+        
+        <nav class="max-w-full">
+            <div class="bg-slate-100 shadow-md">
+                <div class="container max-w-full mx-auto flex flex-wrap items-center justify-between">
+                    <button data-collapse-toggle="mobile-menu" type="button" class="md:hidden ml-3 bg-slate-100 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center" aria-controls="mobile-menu-2" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
                     <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                     </button>
-                    <div class="items-center hidden md:block w-full md:w-auto" id="mobile-menu">
-                    <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium text-pink-100">
+                    <div class="items-center hidden bg-slate-100 md:block w-full md:w-auto" id="mobile-menu">
+                    <ul class="flex-col md:flex-row flex md:space-x-8 mt-0 md:mt-0 md:text-sm md:font-medium text-pink-300">
                         <li>
-                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="p-4 border-b-8 border-yellow-400 border-opacity-0 hover:border-opacity-100 hover:bg-teal-900 duration-200 cursor-pointer focus:border-opacity-100 focus:bg-teal-900 text-lg font-semibold font-mono">Dropdown</button>
+                            <a href="home.html" class="flex">
+                                <img class="scale-50 h-fix max-w-xs mx-auto" src="/img/tarumt.png" alt="Tunku Abdul Rahman University of Management and Technology">
+                            </a>
+                        </li>
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="p-4 mt-6 border-b-8 border-yellow-500 border-opacity-0 hover:border-opacity-100 hover:text-yellow-500 duration-200 cursor-pointer focus:border-opacity-100 focus:opacity-50  focus:text-yellow-500 text-lg font-semibold font-serif">Study</button>
                             <!-- Dropdown menu -->
-                            <div id="dropdownNavbar" class="hidden max-w-max bg-teal-900 text-base z-10 list-none divide-y divide-gray-100 rounded shadow  w-full">
+                            <div id="dropdownNavbar" class="hidden max-w-max  h-auto bg-slate-100 text-base z-10 list-none divide-y divide-gray-100 rounded shadow  w-full">
                                 <ul class="" aria-labelledby="dropdownLargeButton">
                                     <li>
-                                        <div class="p-2">
+                                        <div class="p-2 shadow-md">
                                             <div class="inline-grid">
-                                                <a href="#"><h1 class="text-base text-yellow-400 px-4 py-2">Study Option</h1></a>
-                                                <a href="#" class="text-sm underline underline-offset-4 text-current hover:text-amber-400 px-4 pb-2">Degree</a>
-                                                <a href="#" class="text-sm underline underline-offset-4 text-current hover:text-amber-400 px-4 pb-2">Degree</a>
+                                                <a href="#"><h1 class="text-base text-yellow-500 px-4 py-2">Study Option</h1></a>
+                                                <a href="#" class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Degree</a>
+                                                <a href="#" class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Diploma</a>
                                             </div>
-                                            <div class="inline-grid"> 
-                                                <h1 class="text-base text-yellow-400 px-4 py-2">Study Option</h1>
-                                                <a href="#" class="text-sm underline underline-offset-4 text-current hover:text-amber-400 px-4">Dashboard</a>
+                                            <div class="inline-grid">
+                                                <br>
+                                                <a href="#" class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Qualification Check</a>
+                                                <a href="#" class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Application</a>
+                                                <a href="#" class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Fee&Acholarship</a>
                                             </div>
                                         </div>
                                     </li>
@@ -47,70 +52,93 @@
                             </div>
                         </li>
                         <li>
-                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="p-4 border-b-8 border-yellow-400 border-opacity-0 hover:border-opacity-100 hover:bg-teal-900 duration-200 cursor-pointer focus:border-opacity-100 focus:bg-teal-900 text-lg font-semibold font-mono">Dropdown</button>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar2" class="p-4 mt-6 border-b-8 border-yellow-500 border-opacity-0 hover:border-opacity-100 hover:text-yellow-500 duration-200 cursor-pointer focus:border-opacity-100 focus:opacity-50 focus:text-yellow-500 text-lg font-semibold font-serif">Student</button>
                             <!-- Dropdown menu -->
-                            <div id="dropdownNavbar" class="hidden max-w-full bg-teal-900 text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-full">
-                                <ul class="py-1  " aria-labelledby="dropdownLargeButton">
-                                <li>
-                                    <a href="#" class="text-sm hover:bg-gray-100 hover:text-teal-900 text-yellow-400 block px-4 py-2">Dashboard</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-sm hover:bg-gray-100 hover:text-teal-900 text-yellow-400 block px-4 py-2">Dashboard</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-sm hover:bg-gray-100 hover:text-teal-900 text-yellow-400 block px-4 py-2">Dashboard</a>
-                                </li>
+                            <div id="dropdownNavbar2" class="hidden max-w-max  h-auto bg-slate-100 text-base z-10 list-none divide-y divide-gray-100 rounded shadow  w-full">
+                                <ul class="" aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <div class="p-2 shadow-md">
+                                            <div class="inline-grid">
+                                                <a href="#"><h1 class="text-base text-yellow-500 px-4 py-2">Student</h1></a>
+                                                <a href="#" class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Intranet</a>
+                                                <a href="#" class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Campus Life</a>
+                                            </div>
+                                            <div class="inline-grid">
+                                                <a href="#"><h1 class="text-base text-yellow-500 px-4 py-2">Alumni</h1></a>
+                                                <a href="#" class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Program Offer</a>
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
                         <li>
-                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="p-4 border-b-8 border-yellow-400 border-opacity-0 hover:border-opacity-100 hover:bg-teal-900 duration-200 cursor-pointer focus:border-opacity-100 focus:bg-teal-900 text-lg font-semibold font-mono">Dropdown</button>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar3" class="p-4 mt-6 border-b-8 border-yellow-500 border-opacity-0 hover:border-opacity-100 hover:text-yellow-500 duration-200 cursor-pointer focus:border-opacity-100 focus:opacity-50 focus:text-yellow-500 text-lg font-semibold font-serif">University</button>
                             <!-- Dropdown menu -->
-                            <div id="dropdownNavbar" class="hidden max-w-full bg-teal-900 text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
-                                <ul class="py-1  " aria-labelledby="dropdownLargeButton">
-                                <li>
-                                    <a href="#" class="text-sm hover:bg-gray-100 hover:text-teal-900 text-yellow-400 block px-4 py-2">Dashboard</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-sm hover:bg-gray-100 hover:text-teal-900 text-yellow-400 block px-4 py-2">Dashboard</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-sm hover:bg-gray-100 hover:text-teal-900 text-yellow-400 block px-4 py-2">Dashboard</a>
-                                </li>
+                            <div id="dropdownNavbar3" class="hidden max-w-max  h-auto bg-slate-100 text-base z-10 list-none divide-y divide-gray-100 rounded shadow  w-full">
+                                <ul class="" aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <div class="p-2 shadow-md">
+                                            <div class="inline-grid">
+                                                <a href="#"><h1 class="text-base text-yellow-500 px-4 py-2">Main Campus</h1></a>
+                                                <a href="#" class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Kuala Lumpur Campus</a>
+                                                <br>
+                                                <a href="#" class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Program Comparison</a>
+                                            </div>
+                                            <div class="inline-grid">
+                                                <a href="#"><h1 class="text-base text-yellow-500 px-4 py-2 w-25">Branch Campus</h1></a>
+                                                <a href="#" class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Penang</a>
+                                                <a href="#" class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Perak</a>
+                                                <a href="#" class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Johor</a>
+                                                <a href="#" class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Pahang</a>
+                                                <a href="#" class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Sabah</a>
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
                         <li>
-                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="p-4 border-b-8 border-yellow-400 border-opacity-0 hover:border-opacity-100 hover:bg-teal-900 duration-200 cursor-pointer focus:border-opacity-100 focus:bg-teal-900 text-lg font-semibold font-mono">Dropdown</button>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar4" class="p-4 mt-6 border-b-8 border-yellow-500 border-opacity-0 hover:border-opacity-100 hover:text-yellow-500 duration-200 cursor-pointer focus:border-opacity-100 focus:opacity-50 focus:text-yellow-500 text-lg font-semibold font-serif">About</button>
                             <!-- Dropdown menu -->
-                            <div id="dropdownNavbar" class="hidden max-w-full bg-teal-900 text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
-                                <ul class="py-1  " aria-labelledby="dropdownLargeButton">
-                                <li>
-                                    <a href="#" class="text-sm hover:bg-gray-100 hover:text-teal-900 text-yellow-400 block px-4 py-2">Dashboard</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-sm hover:bg-gray-100 hover:text-teal-900 text-yellow-400 block px-4 py-2">Dashboard</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-sm hover:bg-gray-100 hover:text-teal-900 text-yellow-400 block px-4 py-2">Dashboard</a>
-                                </li>
+                            <div id="dropdownNavbar4" class="hidden max-w-max  h-auto bg-slate-100 text-base z-10 list-none divide-y divide-gray-100 rounded shadow  w-full">
+                                <ul class="" aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <div class="p-2 shadow-md">
+                                            <div class="inline-grid">
+                                                <a href="#" class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">History</a>
+                                                <a href="#" class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Milestone</a>
+                                            </div>
+                                            <div class="inline-grid">
+                                                <a href="#" class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Staff Directory</a>
+                                                <a href="#" class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Job offer</a>
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
                         <li>
-                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="p-4 border-b-8 border-yellow-400 border-opacity-0 hover:border-opacity-100 hover:bg-teal-900 duration-200 cursor-pointer focus:border-opacity-100 focus:bg-teal-900 text-lg font-semibold font-mono">Dropdown</button>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar5" class="p-4 mt-6 border-b-8 border-yellow-500 border-opacity-0 hover:border-opacity-100 hover:text-yellow-500 duration-200 cursor-pointer focus:border-opacity-100 focus:opacity-50 focus:text-yellow-500 text-lg font-semibold font-serif">Keep In Touch</button>
                             <!-- Dropdown menu -->
-                            <div id="dropdownNavbar" class="hidden max-w-full bg-teal-900 text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
-                                <ul class="py-1  " aria-labelledby="dropdownLargeButton">
-                                <li>
-                                    <a href="#" class="text-sm hover:bg-gray-100 hover:text-teal-900 text-yellow-400 block px-4 py-2">Dashboard</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-sm hover:bg-gray-100 hover:text-teal-900 text-yellow-400 block px-4 py-2">Dashboard</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-sm hover:bg-gray-100 hover:text-teal-900 text-yellow-400 block px-4 py-2">Dashboard</a>
-                                </li>
+                            <div id="dropdownNavbar5" class="hidden max-w-max  h-auto bg-slate-100 text-base z-10 list-none divide-y divide-gray-100 rounded shadow  w-full">
+                                <ul class="" aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <div class="p-2 shadow-md">
+                                            <div class="inline-grid">
+                                                <a href="#"><h1 class="text-base text-yellow-500 px-4 py-2">Contact</h1></a>
+                                                <a href="#" class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">tel</a>
+                                                <a href="#" class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Facebook</a>
+                                                <a href="#" class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Instagram</a>
+                                                <a href="#" class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Youtube</a>
+                                                <a href="#" class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">WeiBo</a>
+                                            </div>
+                                            <div class="inline-grid">
+                                                <h1 class="text-base text-yellow-500 px-4 py-2"><i class="fas fa-map"></i> Main Campus Address</h1>
+                                                <p class="text-sm text-neutral-600 opacity-100 text-current hover:opacity-100 px-4 pb-2">Ground Floor, <br> Bangunan Tan Sri Khaw Kai Boh (Block A),<br> Jalan Genting Kelang, Setapak, <br>53300 Kuala Lumpur, <br> Federal Territory of Kuala Lumpur</p>
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
@@ -125,7 +153,7 @@
     </div>
 </head>
 <body>
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
+    <div class="max-w-sm w-full lg:max-w-full lg:flex m-2">
         <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('/img/card-left.jpg')" title="Woman holding a mug">
         </div>
         <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
@@ -152,7 +180,7 @@
 <!-- Footer container -->
 
 <footer
-  class="text-center text-neutral-600 bg-pink-100 lg:text-left font-mono"> 
+  class="text-center shadow-md bg-grey-50 text-pink-300 bg-slate-100 lg:text-left font-mono"> 
   <!-- Main container div: holds the entire content of the footer, including four sections (Tailwind Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
     <div class="container max-w-full p-10">
         <div class="grid md:grid-cols-1 lg:grid-cols-3"><!-- Tailwind Elements section -->
@@ -174,25 +202,25 @@
             </div>
             <!-- 2nd section -->
             <div class="ml-8">
-                <h6 class="mb-4 text-pink-900 justify-center font-extrabold uppercase md:justify-start">
+                <h6 class="mb-4 text-gray-500 justify-center font-extrabold uppercase md:justify-start">
                     Contact
                 </h6>
                 <p class="mb-4">
-                    <a href="#!" class="text-pink-900">
+                    <a href="#!" class="text-gray-500">
                         Contact us
                     </a>
                 </p>
                 <p class="mb-4">
-                    <a href="#!" class="text-pink-900">
+                    <a href="#!" class="text-gray-500">
                         Make an enquiry
                     </a>
                 </p>
                 <p class="mb-4">
-                    <a href="#!" class="text-pink-900">
+                    <a href="#!" class="text-gray-500">
                         WhatsApp
                     </a>
                 </p><br>
-                <section class="text-pink-900 flex">
+                <section class="text-gray-500 flex">
                     <a href="#!" class="mr-9">
                         <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -250,13 +278,13 @@
         
             <div class="ml-4">
                 <h6
-                class="mb-4 flex font-bold text-pink-900 justify-center font-extrabold uppercase md:justify-start">
+                class="mb-4 flex font-bold text-gray-500 justify-center font-extrabold uppercase md:justify-start">
                 GET IN TOUCH
                 </h6>
-                <p class="mb-4 text-pink-900">
+                <p class="mb-4 text-gray-500">
                     <span class="font-semibold">Mon-Fir 8:30am - 5:30pm</span> (Expect on public holidays)</a>
                 </p>
-                <p class="flex items-center justify-center md:justify-start text-pink-900">
+                <p class="flex items-center justify-center md:justify-start text-gray-500">
                     <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -274,7 +302,7 @@
 </div>
 </div>
     <!--Copyright section-->
-    <div class="bg-pink-900 text-pink-100 p-6 text-center opacity-90">
+    <div class="bg-slate-400 text-gray-200 p-6 text-center opacity-50">
         TAR UMT © 2023  ALL Rights Reserved <span class="font-semibold text-yellow-400">Disclaims Privacy Policy</span> and <span class="font-semibold text-yellow-400">ABAC Policy </span>
     </div>
 </footer>
