@@ -14,7 +14,7 @@
     <main>
         <section class="qualification-check">
             <div id="questions">
-                <h2>Questions</h2>
+                <h2 id="questionLabel">Questions</h2>
                 <form id="qualification-form">
                     
                     <!-- Q1 -->
@@ -29,7 +29,7 @@
                         </div>
                     </div>
 
-                    <!-- Diploma -->
+                    <!-- DIPLOMA -->
                     <!--    Q2   -->
                     <div id="question-2" class="question" style="display: none;">
                         <label for="answer-2">Which Diploma program are you interested in studying?</label>
@@ -125,40 +125,290 @@
                         </div>
                     </div>
                     
-                    <!-- Degree -->
+                    <!-- BACHELOR -->
+                    <!-- Q9 -->
                     <div id="question-9" class="question" style="display: none;">
                         <label for="answer-9">Which Bachelor program are you interested in studying?</label>
                         <div class="select-container">
                             <select id="answer-9" required>
                                 <option value="" disabled selected>Select a Bachelor program</option>
-                                <option value="option1">Bachelor of Science (Managament Mathematics with Computing)</option>
-                                <option value="option2">Bachelor of Computer Science (Interactive Software Technology)</option>
-                                <option value="option3">Bachelor of Computer Science (Data Science)</option>
-                                <option value="option4">Bachelor of Information Systems (Enterprise Information Systems)</option>
-                                <option value="option5">Bachelor of Information Technology (Information Security)</option>
-                                <option value="option6">Bachelor of Information Technology (Internet Technology)</option>
-                                <option value="option7">Bachelor of Information Technology (Software Systems Development)</option>
-                                <option value="option8">Bachelor of Software Engineering</option>
+                                <option value="BachelorS-MM">Bachelor of Science (Managament Mathematics with Computing)</option>
+                                <option value="BachelorCS-IST">Bachelor of Computer Science (Interactive Software Technology)</option>
+                                <option value="BachelorCS-DS">Bachelor of Computer Science (Data Science)</option>
+                                <option value="BachelorIS-EIS">Bachelor of Information Systems (Enterprise Information Systems)</option>
+                                <option value="BachelorIT-IS">Bachelor of Information Technology (Information Security)</option>
+                                <option value="BachelorIT-IT">Bachelor of Information Technology (Internet Technology)</option>
+                                <option value="BachelorIT-SSD">Bachelor of Information Technology (Software Systems Development)</option>
+                                <option value="BachelorSE">Bachelor of Software Engineering</option>
                             </select>
                         </div>
                     </div>
 
+                    <!-- Q10 -->
+                    <!-- For BachelorS-MM only-->
                     <div id="question-10" class="question" style="display: none;">
                         <label for="answer-10">Highest level of study attempted or completed</label>
                         <div class="select-container">
                             <select id="answer-10" required>
                                 <option value="" disabled selected>Select highest level of study</option>
-                                <option value="option1">None</option>
-                                <option value="option2">STPM</option>
-                                <option value="option3">A Level</option>
-                                <option value="option4">UEC</option>
-                                <option value="option5">Other IHL</option>
-                                <option value="option6">TAR UMT (Foundation in Science - Track A / Relevant Diploma)</option>
+                                <option value="None">None</option>
+                                <option value="STPM">STPM</option>
+                                <option value="A Level">A Level</option>
+                                <option value="UEC">UEC</option>
+                                <option value="OtherIHL">Other IHL (Relevant Foundation/ Diploma accredited by MQA)</option>
+                                <option value="TARUMT">TAR UMT (Foundation in Science - Track A / Relevant Diploma)</option>
                             </select>
                         </div>
-
-                        
                     </div>
+
+                    <!-- Q11 -->
+                    <!-- Bachelor of Science (Management Mathematics) - STPM -->
+                    <div id="question-11" class="question" style="display: none;">
+                        <label for="answer-11">SPM Pass, credit and achieve 2 Grade C in STPM?</label>
+                        <div class="select-container">
+                            <select id="answer-11" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Q12 -->
+                    <!-- Bachelor of Science (Management Mathematics) - A Level -->
+                    <div id="question-12" class="question" style="display: none;">
+                        <label for="answer-12">O Level pass, Grade C in Maths and achieve 2 Grade D in A Level?</label>
+                        <div class="select-container">
+                            <select id="answer-12" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Q13 -->
+                    <!-- Bachelor of Science (Management Mathematics) - UEC -->
+                    <div id="question-13" class="question" style="display: none;">
+                        <label for="answer-13">Achieve 5 Grade B (including one Maths subject and English Language)?</label>
+                        <div class="select-container">
+                            <select id="answer-13" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Q14 (include Q9)--> 
+                    <!-- For BachelorCS-IST, BachelorCS-DS, BachelorSE-->
+                    <div id="question-14" class="question" style="display: none;">
+                        <label for="answer-14">Highest level of study attempted or completed</label>
+                        <div class="select-container">
+                            <select id="answer-14" required>
+                                <option value="" disabled selected>Select highest level of study</option>
+                                <option value="None">None</option>
+                                <option value="STPM">STPM</option>
+                                <option value="A Level">A Level</option>
+                                <option value="UEC">UEC</option>
+                                <option value="OtherIHL">Other IHL (Relevant Foundation/ Diploma accredited by MQA(CGPA 2.5+))</option>
+                                <option value="TARUMT">TAR UMT (Foundation in Computing - Track A / Relevant Diploma (CGPA 2.5+))</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Q15 -->
+                    <!-- BachelorCS-IST, BachelorCS-DS, BachelorSE - STPM (Q1)-->
+                    <div id="question-15" class="question" style="display: none;">
+                        <label for="answer-15">SPM pass, credit and achieve 2 Grade C in STPM?</label>
+                        <div class="select-container">
+                            <select id="answer-15" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Q16 -->
+                    <!-- BachelorCS-IST, BachelorCS-DS, BachelorSE - STPM (Q2)-->
+                    <div id="question-16" class="question" style="display: none;">
+                        <label for="answer-16">SPM pass and achieve Grade C in one Maths and one Science/ ICT subject?</label>
+                        <div class="select-container">
+                            <select id="answer-16" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Q17 -->
+                    <!-- BachelorCS-IST, BachelorCS-DS, BachelorSE - STPM (Q3)-->
+                    <div id="question-17" class="question" style="display: none;">
+                        <label for="answer-17">SPM pass, credit, achieve 2 Grade C in STPM, and Grade C in AMMS0204 Maths?</label>
+                        <div class="select-container">
+                            <select id="answer-17" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Q18 -->
+                    <!-- BachelorCS-IST, BachelorCS-DS, BachelorSE - A Level (Q1)-->
+                    <div id="question-18" class="question" style="display: none;">
+                        <label for="answer-18">O Level pass, achieve Grade C in Maths-Additional , 2 Grade D in A Level?</label>
+                        <div class="select-container">
+                            <select id="answer-18" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Q19 -->
+                    <!-- BachelorCS-IST, BachelorCS-DS, BachelorSE - A Level (Q2)-->
+                    <div id="question-19" class="question" style="display: none;">
+                        <label for="answer-19">O Level pass, and achieve Grade D in one Maths and one Science/ ICT subject?</label>
+                        <div class="select-container">
+                            <select id="answer-19" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Q20 -->
+                    <!-- BachelorCS-IST, BachelorCS-DS, BachelorSE - A Level (Q3) -->
+                    <div id="question-20" class="question" style="display: none;">
+                        <label for="answer-20">O Level pass, achieve Grade C in Maths and one Science/ Technology/ 
+                            Engineering subject, 2 Grade D in A Level, and Grade C in AMMS0204 Maths?</label>
+                        <div class="select-container">
+                            <select id="answer-20" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Q21 -->
+                    <!-- BachelorCS-IST, BachelorCS-DS, BachelorSE - UEC (Q1) -->
+                    <div id="question-21" class="question" style="display: none;">
+                        <label for="answer-21">Achieve Grade B in one Maths subject, Grade C in English Language, 
+                            and 5 Grade B in UEC?</label>
+                        <div class="select-container">
+                            <select id="answer-21" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Q22 -->
+                    <!-- BachelorCS-IST, BachelorCS-DS, BachelorSE - UEC (Q2)-->
+                    <div id="question-22" class="question" style="display: none;">
+                        <label for="answer-22">Achieve Grade C in English Language, Grade C in AMMS0204 Maths, 
+                            and 5 Grade B in UEC?</label>
+                        <div class="select-container">
+                            <select id="answer-22" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Q23 -->
+                    <!-- Bachelor of Computer Science (IST/DS) & Software Engineering - OtherIHL-->
+                    <div id="question-23" class="question" style="display: none;">
+                        <label for="answer-23">SPM pass and credit in Add Maths/ O Level pass and Grade C in Maths/ 
+                            achieve Grade C in English Language, Grade B in one Maths subject in UEC?</label>
+                        <div class="select-container">
+                            <select id="answer-23" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Q24 (include Q9)--> 
+                    <!-- For BachelorIS-EIS, BachelorIS-IS, BachelorIT-IT, BachelorIT-SSD-->
+                    <div id="question-24" class="question" style="display: none;">
+                        <label for="answer-24">Highest level of study attempted or completed</label>
+                        <div class="select-container">
+                            <select id="answer-24" required>
+                                <option value="" disabled selected>Select highest level of study</option>
+                                <option value="None">None</option>
+                                <option value="STPM">STPM</option>
+                                <option value="A Level">A Level</option>
+                                <option value="UEC">UEC</option>
+                                <option value="OtherIHL">Other IHL (Relevant Foundation/ Diploma accredited by MQA(CGPA 2.5+))</option>
+                                <option value="TARUMT">TAR UMT (Foundation in Computing - Track B / Relevant Diploma (CGPA 2.5+))</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Q25 -->
+                    <!-- BachelorIS-EIS, BachelorIS-IS, BachelorIT-IT, BachelorIT-SSD - STPM -->
+                    <div id="question-25" class="question" style="display: none;">
+                        <label for="answer-25">SPM Pass, credit and achieve 2 Grade C in STPM?</label>
+                        <div class="select-container">
+                            <select id="answer-25" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Q26 -->
+                    <!-- BachelorIS-EIS, BachelorIS-IS, BachelorIT-IT, BachelorIT-SSD - A Level -->
+                    <div id="question-26" class="question" style="display: none;">
+                        <label for="answer-26">O Level Pass, achieve Grade C in Maths, and 2 Grade D in A Level?</label>
+                        <div class="select-container">
+                            <select id="answer-26" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Q27 -->
+                    <!-- BachelorIS-EIS, BachelorIS-IS, BachelorIT-IT, BachelorIT-SSD - UEC -->
+                    <div id="question-27" class="question" style="display: none;">
+                        <label for="answer-27">Achieve Grade B in one Maths subject, Grade C in English Language, 
+                            and 5 Grade B in UEC?</label>
+                        <div class="select-container">
+                            <select id="answer-27" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Q28 -->
+                    <!-- BachelorIS-EIS, BachelorIS-IS, BachelorIT-IT, BachelorIT-SSD - Other IHL -->
+                    <div id="question-28" class="question" style="display: none;">
+                        <label for="answer-28">SPM pass and credit/ O Level pass and Grade C in Maths/ achieve Grade C 
+                            in English Language, Grade B in one Maths subject in UEC?</label>
+                        <div class="select-container">
+                            <select id="answer-28" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+
                     <button type="button" id="submitBtn" style="display: none;" onclick="submitForm()">Check Qualification</button>
                 </form>
             </div>
