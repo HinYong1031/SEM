@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-pink-100">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,430 +15,459 @@
     <!-- Link to Tailwind Elements -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <script src="headerFooter.js"></script>
+
+    <title>Qualification Check</title>
+    
+</head>
+<body class="font-sans m-0 p-0 flex flex-col min-h-screen">
+    <header></header>
+
+<!-- Background image -->
+<span class="[&>svg]:absolute [&>svg]:-z-10 [&>svg]:m-auto [&>svg]:block [&>svg]:w-full">
+    <div class="relative overflow-hidden bg-cover bg-no-repeat bg-[50%] h-[500px] bg-[url('https://tecdn.b-cdn.net/img/new/standard/city/078.jpg')]">
+      <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0.75)]">
+        <div class="flex h-full items-center justify-center">
+          <div class="mb-20 px-6 text-center text-white md:px-12">
+            <h1 class="mt-6 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
+              Qualification Check
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="-mt-2.5 text-white dark:text-neutral-800 md:-mt-4 lg:-mt-6 xl:-mt-10 h-[50px] scale-[2] origin-[top_center]">
+      <svg viewBox="0 0 2880 48" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 0 48 L 1437.5 48 L 2880 48 L 2880 0 L 2160 0 C 1453.324 60.118 726.013 4.51 720 0 L 0 0 L 0 48 Z"
+          fill="currentColor"></path>
+      </svg>
+    </div>
+  </span>
+  
+  <!-- Jumbotron -->
+        <main class="relative w-3/5 mx-auto flex-grow" style="margin-top: -220px;">
+                <div id="questions" class="text-center mx-auto mt-10 mb-20 p-6 bg-slate-100 rounded-3xl shadow-lg">
+                    <h2 id="questionLabel" class="font-bold text-3xl mb-8">Questions</h2>
+                    <form id="qualification-form">
+                        <!-- Q1 -->
+                        <div id="question-1" class="max-h-80">
+                            <label for="answer-1" class="block font-semibold text-2xl mb-5">Which program are you interested in studying?</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-1" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select a program</option>
+                                    <option value="Diploma">Diploma</option>
+                                    <option value="Bachelor">Bachelor</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- DIPLOMA -->
+                        <!--    Q2   -->
+                        <div id="question-2" class="max-h-80 hidden">
+                            <label for="answer-2" class="block font-semibold text-2xl mb-5">Which Diploma program are you interested in studying?</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-2" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select a Diploma program</option>
+                                    <option value="DiplomaCS">Diploma in Computer Science</option>
+                                    <option value="DiplomaIS">Diploma in Information Systems</option>
+                                    <option value="DiplomaIT">Diploma in information Technology</option>
+                                    <option value="DiplomaSE">Diploma in Software Engineering</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q3 -->
+                        <div id="question-3" class="max-h-80 hidden">
+                            <label for="answer-3" class="block font-semibold text-2xl mb-5">Highest level of study attempted or completed</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-3" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select highest level of study</option>
+                                    <option value="None">None</option>
+                                    <option value="SPM">SPM</option>
+                                    <option value="O Level">O Level</option>
+                                    <option value="UEC">UEC</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q4 -->
+                        <!-- Diploma (Computer Science) - SPM -->
+                        <div id="question-4" class="max-h-80 hidden">
+                            <label for="answer-4" class="block font-semibold text-2xl mb-5">Pass and achieve 3 credits (inclduing Add Maths)?</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-4" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q5 -->
+                        <!-- Diploma (Computer Science) - O Level -->
+                        <div id="question-5" class="max-h-80 hidden">
+                            <label for="answer-5" class="block font-semibold text-2xl mb-5">Pass and achieve 3 Grade C (inclduing Maths-Additional)?</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-5" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q6 -->
+                        <!-- Diploma (Information Systems/ Information Technology/ Software Engineering) -->
+                        <!-- SPM-->
+                        <div id="question-6" class="max-h-80 hidden">
+                            <label for="answer-6" class="block font-semibold text-2xl mb-5">Pass and achieve 3 credits?</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-6" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q7 -->
+                        <!-- Diploma (Information Systems/ Information Technology/ Software Engineering) -->
+                        <!-- O Level-->
+                        <div id="question-7" class="max-h-80 hidden">
+                            <label for="answer-7" class="block font-semibold text-2xl mb-5">Pass and achieve 3 Grade C (inclduing Mathematics)?</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-7" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q8 -->
+                        <!-- Diploma (All) - UEC -->
+                        <div id="question-8" class="max-h-80 hidden">
+                            <label for="answer-8" class="block font-semibold text-2xl mb-5">Achieve Grade C in English and 3 Grade B?</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-8" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <!-- BACHELOR -->
+                        <!-- Q9 -->
+                        <div id="question-9" class="max-h-80 hidden">
+                            <label for="answer-9" class="block font-semibold text-2xl mb-5">Which Bachelor program are you interested in studying?</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-9" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select a Bachelor program</option>
+                                    <option value="BachelorS-MM">Bachelor of Science (Managament Mathematics with Computing)</option>
+                                    <option value="BachelorCS-IST">Bachelor of Computer Science (Interactive Software Technology)</option>
+                                    <option value="BachelorCS-DS">Bachelor of Computer Science (Data Science)</option>
+                                    <option value="BachelorIS-EIS">Bachelor of Information Systems (Enterprise Information Systems)</option>
+                                    <option value="BachelorIT-IS">Bachelor of Information Technology (Information Security)</option>
+                                    <option value="BachelorIT-IT">Bachelor of Information Technology (Internet Technology)</option>
+                                    <option value="BachelorIT-SSD">Bachelor of Information Technology (Software Systems Development)</option>
+                                    <option value="BachelorSE">Bachelor of Software Engineering</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q10 -->
+                        <!-- For BachelorS-MM only-->
+                        <div id="question-10" class="max-h-80 hidden">
+                            <label for="answer-10" class="block font-semibold text-2xl mb-5">Highest level of study attempted or completed</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-10" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select highest level of study</option>
+                                    <option value="None">None</option>
+                                    <option value="STPM">STPM</option>
+                                    <option value="A Level">A Level</option>
+                                    <option value="UEC">UEC</option>
+                                    <option value="OtherIHL">Other IHL (Relevant Foundation/ Diploma accredited by MQA)</option>
+                                    <option value="TARUMT">TAR UMT (Foundation in Science - Track A / Relevant Diploma)</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q11 -->
+                        <!-- Bachelor of Science (Management Mathematics) - STPM -->
+                        <div id="question-11" class="max-h-80 hidden">
+                            <label for="answer-11" class="block font-semibold text-2xl mb-5">SPM Pass, credit and achieve 2 Grade C in STPM?</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-11" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q12 -->
+                        <!-- Bachelor of Science (Management Mathematics) - A Level -->
+                        <div id="question-12" class="max-h-80 hidden">
+                            <label for="answer-12" class="block font-semibold text-2xl mb-5">O Level pass, Grade C in Maths and achieve 2 Grade D in A Level?</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-12" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q13 -->
+                        <!-- Bachelor of Science (Management Mathematics) - UEC -->
+                        <div id="question-13" class="max-h-80 hidden">
+                            <label for="answer-13" class="block font-semibold text-2xl mb-5">Achieve 5 Grade B (including one Maths subject and English Language)?</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-13" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q14 (include Q9)--> 
+                        <!-- For BachelorCS-IST, BachelorCS-DS, BachelorSE-->
+                        <div id="question-14" class="max-h-80 hidden">
+                            <label for="answer-14" class="block font-semibold text-2xl mb-5">Highest level of study attempted or completed</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-14" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select highest level of study</option>
+                                    <option value="None">None</option>
+                                    <option value="STPM">STPM</option>
+                                    <option value="A Level">A Level</option>
+                                    <option value="UEC">UEC</option>
+                                    <option value="OtherIHL">Other IHL (Relevant Foundation/ Diploma accredited by MQA(CGPA 2.5+))</option>
+                                    <option value="TARUMT">TAR UMT (Foundation in Computing - Track A / Relevant Diploma (CGPA 2.5+))</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q15 -->
+                        <!-- BachelorCS-IST, BachelorCS-DS, BachelorSE - STPM (Q1)-->
+                        <div id="question-15" class="max-h-80 hidden">
+                            <label for="answer-15" class="block font-semibold text-2xl mb-5">SPM pass, credit and achieve 2 Grade C in STPM?</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-15" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q16 -->
+                        <!-- BachelorCS-IST, BachelorCS-DS, BachelorSE - STPM (Q2)-->
+                        <div id="question-16" class="max-h-80 hidden">
+                            <label for="answer-16" class="block font-semibold text-2xl mb-5">SPM pass and achieve Grade C in one Maths and one Science/ ICT subject?</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-16" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q17 -->
+                        <!-- BachelorCS-IST, BachelorCS-DS, BachelorSE - STPM (Q3)-->
+                        <div id="question-17" class="max-h-80 hidden">
+                            <label for="answer-17" class="block font-semibold text-2xl mb-5">SPM pass, credit, achieve 2 Grade C in STPM, and Grade C in AMMS0204 Maths?</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-17" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q18 -->
+                        <!-- BachelorCS-IST, BachelorCS-DS, BachelorSE - A Level (Q1)-->
+                        <div id="question-18" class="max-h-80 hidden">
+                            <label for="answer-18" class="block font-semibold text-2xl mb-5">O Level pass, achieve Grade C in Maths-Additional , 2 Grade D in A Level?</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-18" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q19 -->
+                        <!-- BachelorCS-IST, BachelorCS-DS, BachelorSE - A Level (Q2)-->
+                        <div id="question-19" class="max-h-80 hidden">
+                            <label for="answer-19" class="block font-semibold text-2xl mb-5">O Level pass, and achieve Grade D in one Maths and one Science/ ICT subject?</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-19" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q20 -->
+                        <!-- BachelorCS-IST, BachelorCS-DS, BachelorSE - A Level (Q3) -->
+                        <div id="question-20" class="max-h-80 hidden">
+                            <label for="answer-20" class="block font-semibold text-2xl mb-5">O Level pass, achieve Grade C in Maths and one Science/ Technology/ 
+                                Engineering subject, 2 Grade D in A Level, and Grade C in AMMS0204 Maths?</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-20" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q21 -->
+                        <!-- BachelorCS-IST, BachelorCS-DS, BachelorSE - UEC (Q1) -->
+                        <div id="question-21" class="max-h-80 hidden">
+                            <label for="answer-21" class="block font-semibold text-2xl mb-5">Achieve Grade B in one Maths subject, Grade C in English Language, 
+                                and 5 Grade B in UEC?</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-21" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q22 -->
+                        <!-- BachelorCS-IST, BachelorCS-DS, BachelorSE - UEC (Q2)-->
+                        <div id="question-22" class="max-h-80 hidden">
+                            <label for="answer-22" class="block font-semibold text-2xl mb-5">Achieve Grade C in English Language, Grade C in AMMS0204 Maths, 
+                                and 5 Grade B in UEC?</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-22" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q23 -->
+                        <!-- Bachelor of Computer Science (IST/DS) & Software Engineering - OtherIHL-->
+                        <div id="question-23" class="max-h-80 hidden">
+                            <label for="answer-23" class="block font-semibold text-2xl mb-5">SPM pass and credit in Add Maths/ O Level pass and Grade C in Maths/ 
+                                achieve Grade C in English Language, Grade B in one Maths subject in UEC?</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-23" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q24 (include Q9)--> 
+                        <!-- For BachelorIS-EIS, BachelorIS-IS, BachelorIT-IT, BachelorIT-SSD-->
+                        <div id="question-24" class="max-h-80 hidden">
+                            <label for="answer-24" class="block font-semibold text-2xl mb-5">Highest level of study attempted or completed</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-24" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select highest level of study</option>
+                                    <option value="None">None</option>
+                                    <option value="STPM">STPM</option>
+                                    <option value="A Level">A Level</option>
+                                    <option value="UEC">UEC</option>
+                                    <option value="OtherIHL">Other IHL (Relevant Foundation/ Diploma accredited by MQA(CGPA 2.5+))</option>
+                                    <option value="TARUMT">TAR UMT (Foundation in Computing - Track B / Relevant Diploma (CGPA 2.5+))</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q25 -->
+                        <!-- BachelorIS-EIS, BachelorIS-IS, BachelorIT-IT, BachelorIT-SSD - STPM -->
+                        <div id="question-25" class="max-h-80 hidden">
+                            <label for="answer-25" class="block font-semibold text-2xl mb-5">SPM Pass, credit and achieve 2 Grade C in STPM?</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-25" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q26 -->
+                        <!-- BachelorIS-EIS, BachelorIS-IS, BachelorIT-IT, BachelorIT-SSD - A Level -->
+                        <div id="question-26" class="max-h-80 hidden">
+                            <label for="answer-26" class="block font-semibold text-2xl mb-5">O Level Pass, achieve Grade C in Maths, and 2 Grade D in A Level?</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-26" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q27 -->
+                        <!-- BachelorIS-EIS, BachelorIS-IS, BachelorIT-IT, BachelorIT-SSD - UEC -->
+                        <div id="question-27" class="max-h-80 hidden">
+                            <label for="answer-27" class="block font-semibold text-2xl mb-5">Achieve Grade B in one Maths subject, Grade C in English Language, 
+                                and 5 Grade B in UEC?</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-27" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Q28 -->
+                        <!-- BachelorIS-EIS, BachelorIS-IS, BachelorIT-IT, BachelorIT-SSD - Other IHL -->
+                        <div id="question-28" class="max-h-80 hidden">
+                            <label for="answer-28" class="block font-semibold text-2xl mb-5">SPM pass and credit/ O Level pass and Grade C in Maths/ achieve Grade C 
+                                in English Language, Grade B in one Maths subject in UEC?</label>
+                            <div class="flex flex-col items-center gap-10 relative pb-20">
+                                <select id="answer-28" class="w-full h-18 rounded-xl text-xl p-5" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <button type="button" id="submitBtn" class="mx-auto rounded-xl font-bold p-6 py-2 bg-gray-800 text-white text-xl border-none cursor-pointer hover:bg-gray-500 hidden" 
+                        onclick="submitForm()">Check Qualification</button>
+                    </form>
+                
+                    <div id="result" class="font-bold text-2xl mb-8 hidden">
+                        <h2 class="font-bold text-3xl mb-8">Result</h2>
+                        <p id="qualification-result" class="font-bold text-2xl mb-6"></p>
+                        <button type='button' id="resetBtn" class="mx-auto rounded-xl font-bold p-6 py-2 bg-gray-800 text-white text-xl border-none cursor-pointer hover:bg-gray-500 hidden"
+                        onclick="resetForm()">Reset</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+      </div>
+    </div>
+</div>
+</div>
+
+    
+
+    <footer class="text-center shadow-md bg-black lg:text-left font-mono"></footer>
     <!-- Link to tailwind -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     <!-- Link to Tailwind Elements -->
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
-    <!-- <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script> -->
-    <script src="headerFooter.js"></script>
 
-    <title>Qualification Check</title>
-</head>
-<body class="font-sans m-0 p-0">
-    <header></header>
-
-    <main class="mx_auto p-5 flex-grow">
-        <section class="max-w-screen-md mx-auto text-center">
-            <div id="questions" class="mx-auto mt-10 p-6 bg-slate-100 rounded-3xl shadow-lg">
-                <h2 id="questionLabel" class="font-bold text-3xl mb-8">Questions</h2>
-                <form id="qualification-form">
-                    <!-- Q1 -->
-                    <div id="question-1" class="max-h-80">
-                        <label for="answer-1" class="block font-semibold text-2xl mb-5">Which program are you interested in studying?</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-1" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select a program</option>
-                                <option value="Diploma">Diploma</option>
-                                <option value="Bachelor">Bachelor</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- DIPLOMA -->
-                    <!--    Q2   -->
-                    <div id="question-2" class="max-h-80 hidden">
-                        <label for="answer-2" class="block font-semibold text-2xl mb-5">Which Diploma program are you interested in studying?</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-2" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select a Diploma program</option>
-                                <option value="DiplomaCS">Diploma in Computer Science</option>
-                                <option value="DiplomaIS">Diploma in Information Systems</option>
-                                <option value="DiplomaIT">Diploma in information Technology</option>
-                                <option value="DiplomaSE">Diploma in Software Engineering</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q3 -->
-                    <div id="question-3" class="max-h-80 hidden">
-                        <label for="answer-3" class="block font-semibold text-2xl mb-5">Highest level of study attempted or completed</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-3" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select highest level of study</option>
-                                <option value="None">None</option>
-                                <option value="SPM">SPM</option>
-                                <option value="O Level">O Level</option>
-                                <option value="UEC">UEC</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q4 -->
-                    <!-- Diploma (Computer Science) - SPM -->
-                    <div id="question-4" class="max-h-80 hidden">
-                        <label for="answer-4" class="block font-semibold text-2xl mb-5">Pass and achieve 3 credits (inclduing Add Maths)?</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-4" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q5 -->
-                    <!-- Diploma (Computer Science) - O Level -->
-                    <div id="question-5" class="max-h-80 hidden">
-                        <label for="answer-5" class="block font-semibold text-2xl mb-5">Pass and achieve 3 Grade C (inclduing Maths-Additional)?</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-5" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q6 -->
-                    <!-- Diploma (Information Systems/ Information Technology/ Software Engineering) -->
-                    <!-- SPM-->
-                    <div id="question-6" class="max-h-80 hidden">
-                        <label for="answer-6" class="block font-semibold text-2xl mb-5">Pass and achieve 3 credits?</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-6" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q7 -->
-                    <!-- Diploma (Information Systems/ Information Technology/ Software Engineering) -->
-                    <!-- O Level-->
-                    <div id="question-7" class="max-h-80 hidden">
-                        <label for="answer-7" class="block font-semibold text-2xl mb-5">Pass and achieve 3 Grade C (inclduing Mathematics)?</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-7" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q8 -->
-                    <!-- Diploma (All) - UEC -->
-                    <div id="question-8" class="max-h-80 hidden">
-                        <label for="answer-8" class="block font-semibold text-2xl mb-5">Achieve Grade C in English and 3 Grade B?</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-8" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
-                        </div>
-                    </div>
-                    
-                    <!-- BACHELOR -->
-                    <!-- Q9 -->
-                    <div id="question-9" class="max-h-80 hidden">
-                        <label for="answer-9" class="block font-semibold text-2xl mb-5">Which Bachelor program are you interested in studying?</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-9" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select a Bachelor program</option>
-                                <option value="BachelorS-MM">Bachelor of Science (Managament Mathematics with Computing)</option>
-                                <option value="BachelorCS-IST">Bachelor of Computer Science (Interactive Software Technology)</option>
-                                <option value="BachelorCS-DS">Bachelor of Computer Science (Data Science)</option>
-                                <option value="BachelorIS-EIS">Bachelor of Information Systems (Enterprise Information Systems)</option>
-                                <option value="BachelorIT-IS">Bachelor of Information Technology (Information Security)</option>
-                                <option value="BachelorIT-IT">Bachelor of Information Technology (Internet Technology)</option>
-                                <option value="BachelorIT-SSD">Bachelor of Information Technology (Software Systems Development)</option>
-                                <option value="BachelorSE">Bachelor of Software Engineering</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q10 -->
-                    <!-- For BachelorS-MM only-->
-                    <div id="question-10" class="max-h-80 hidden">
-                        <label for="answer-10" class="block font-semibold text-2xl mb-5">Highest level of study attempted or completed</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-10" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select highest level of study</option>
-                                <option value="None">None</option>
-                                <option value="STPM">STPM</option>
-                                <option value="A Level">A Level</option>
-                                <option value="UEC">UEC</option>
-                                <option value="OtherIHL">Other IHL (Relevant Foundation/ Diploma accredited by MQA)</option>
-                                <option value="TARUMT">TAR UMT (Foundation in Science - Track A / Relevant Diploma)</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q11 -->
-                    <!-- Bachelor of Science (Management Mathematics) - STPM -->
-                    <div id="question-11" class="max-h-80 hidden">
-                        <label for="answer-11" class="block font-semibold text-2xl mb-5">SPM Pass, credit and achieve 2 Grade C in STPM?</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-11" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q12 -->
-                    <!-- Bachelor of Science (Management Mathematics) - A Level -->
-                    <div id="question-12" class="max-h-80 hidden">
-                        <label for="answer-12" class="block font-semibold text-2xl mb-5">O Level pass, Grade C in Maths and achieve 2 Grade D in A Level?</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-12" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q13 -->
-                    <!-- Bachelor of Science (Management Mathematics) - UEC -->
-                    <div id="question-13" class="max-h-80 hidden">
-                        <label for="answer-13" class="block font-semibold text-2xl mb-5">Achieve 5 Grade B (including one Maths subject and English Language)?</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-13" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q14 (include Q9)--> 
-                    <!-- For BachelorCS-IST, BachelorCS-DS, BachelorSE-->
-                    <div id="question-14" class="max-h-80 hidden">
-                        <label for="answer-14" class="block font-semibold text-2xl mb-5">Highest level of study attempted or completed</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-14" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select highest level of study</option>
-                                <option value="None">None</option>
-                                <option value="STPM">STPM</option>
-                                <option value="A Level">A Level</option>
-                                <option value="UEC">UEC</option>
-                                <option value="OtherIHL">Other IHL (Relevant Foundation/ Diploma accredited by MQA(CGPA 2.5+))</option>
-                                <option value="TARUMT">TAR UMT (Foundation in Computing - Track A / Relevant Diploma (CGPA 2.5+))</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q15 -->
-                    <!-- BachelorCS-IST, BachelorCS-DS, BachelorSE - STPM (Q1)-->
-                    <div id="question-15" class="max-h-80 hidden">
-                        <label for="answer-15" class="block font-semibold text-2xl mb-5">SPM pass, credit and achieve 2 Grade C in STPM?</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-15" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q16 -->
-                    <!-- BachelorCS-IST, BachelorCS-DS, BachelorSE - STPM (Q2)-->
-                    <div id="question-16" class="max-h-80 hidden">
-                        <label for="answer-16" class="block font-semibold text-2xl mb-5">SPM pass and achieve Grade C in one Maths and one Science/ ICT subject?</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-16" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q17 -->
-                    <!-- BachelorCS-IST, BachelorCS-DS, BachelorSE - STPM (Q3)-->
-                    <div id="question-17" class="max-h-80 hidden">
-                        <label for="answer-17" class="block font-semibold text-2xl mb-5">SPM pass, credit, achieve 2 Grade C in STPM, and Grade C in AMMS0204 Maths?</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-17" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q18 -->
-                    <!-- BachelorCS-IST, BachelorCS-DS, BachelorSE - A Level (Q1)-->
-                    <div id="question-18" class="max-h-80 hidden">
-                        <label for="answer-18" class="block font-semibold text-2xl mb-5">O Level pass, achieve Grade C in Maths-Additional , 2 Grade D in A Level?</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-18" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q19 -->
-                    <!-- BachelorCS-IST, BachelorCS-DS, BachelorSE - A Level (Q2)-->
-                    <div id="question-19" class="max-h-80 hidden">
-                        <label for="answer-19" class="block font-semibold text-2xl mb-5">O Level pass, and achieve Grade D in one Maths and one Science/ ICT subject?</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-19" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q20 -->
-                    <!-- BachelorCS-IST, BachelorCS-DS, BachelorSE - A Level (Q3) -->
-                    <div id="question-20" class="max-h-80 hidden">
-                        <label for="answer-20" class="block font-semibold text-2xl mb-5">O Level pass, achieve Grade C in Maths and one Science/ Technology/ 
-                            Engineering subject, 2 Grade D in A Level, and Grade C in AMMS0204 Maths?</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-20" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q21 -->
-                    <!-- BachelorCS-IST, BachelorCS-DS, BachelorSE - UEC (Q1) -->
-                    <div id="question-21" class="max-h-80 hidden">
-                        <label for="answer-21" class="block font-semibold text-2xl mb-5">Achieve Grade B in one Maths subject, Grade C in English Language, 
-                            and 5 Grade B in UEC?</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-21" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q22 -->
-                    <!-- BachelorCS-IST, BachelorCS-DS, BachelorSE - UEC (Q2)-->
-                    <div id="question-22" class="max-h-80 hidden">
-                        <label for="answer-22" class="block font-semibold text-2xl mb-5">Achieve Grade C in English Language, Grade C in AMMS0204 Maths, 
-                            and 5 Grade B in UEC?</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-22" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q23 -->
-                    <!-- Bachelor of Computer Science (IST/DS) & Software Engineering - OtherIHL-->
-                    <div id="question-23" class="max-h-80 hidden">
-                        <label for="answer-23" class="block font-semibold text-2xl mb-5">SPM pass and credit in Add Maths/ O Level pass and Grade C in Maths/ 
-                            achieve Grade C in English Language, Grade B in one Maths subject in UEC?</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-23" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q24 (include Q9)--> 
-                    <!-- For BachelorIS-EIS, BachelorIS-IS, BachelorIT-IT, BachelorIT-SSD-->
-                    <div id="question-24" class="max-h-80 hidden">
-                        <label for="answer-24" class="block font-semibold text-2xl mb-5">Highest level of study attempted or completed</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-24" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select highest level of study</option>
-                                <option value="None">None</option>
-                                <option value="STPM">STPM</option>
-                                <option value="A Level">A Level</option>
-                                <option value="UEC">UEC</option>
-                                <option value="OtherIHL">Other IHL (Relevant Foundation/ Diploma accredited by MQA(CGPA 2.5+))</option>
-                                <option value="TARUMT">TAR UMT (Foundation in Computing - Track B / Relevant Diploma (CGPA 2.5+))</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q25 -->
-                    <!-- BachelorIS-EIS, BachelorIS-IS, BachelorIT-IT, BachelorIT-SSD - STPM -->
-                    <div id="question-25" class="max-h-80 hidden">
-                        <label for="answer-25" class="block font-semibold text-2xl mb-5">SPM Pass, credit and achieve 2 Grade C in STPM?</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-25" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q26 -->
-                    <!-- BachelorIS-EIS, BachelorIS-IS, BachelorIT-IT, BachelorIT-SSD - A Level -->
-                    <div id="question-26" class="max-h-80 hidden">
-                        <label for="answer-26" class="block font-semibold text-2xl mb-5">O Level Pass, achieve Grade C in Maths, and 2 Grade D in A Level?</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-26" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q27 -->
-                    <!-- BachelorIS-EIS, BachelorIS-IS, BachelorIT-IT, BachelorIT-SSD - UEC -->
-                    <div id="question-27" class="max-h-80 hidden">
-                        <label for="answer-27" class="block font-semibold text-2xl mb-5">Achieve Grade B in one Maths subject, Grade C in English Language, 
-                            and 5 Grade B in UEC?</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-27" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Q28 -->
-                    <!-- BachelorIS-EIS, BachelorIS-IS, BachelorIT-IT, BachelorIT-SSD - Other IHL -->
-                    <div id="question-28" class="max-h-80 hidden">
-                        <label for="answer-28" class="block font-semibold text-2xl mb-5">SPM pass and credit/ O Level pass and Grade C in Maths/ achieve Grade C 
-                            in English Language, Grade B in one Maths subject in UEC?</label>
-                        <div class="flex flex-col items-center gap-10 relative pb-20">
-                            <select id="answer-28" class="w-full h-18 rounded-xl text-xl p-5" required>
-                                <option value="" disabled selected>Select</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <button type="button" id="submitBtn" class="mx-auto rounded-xl font-bold p-6 py-2 bg-gray-800 text-white text-xl border-none cursor-pointer hover:bg-gray-500 hidden" 
-                    onclick="submitForm()">Check Qualification</button>
-                </form>
-            
-                <div id="result" class="font-bold text-2xl mb-8 hidden">
-                    <h2 class="font-bold text-3xl mb-8">Result</h2>
-                    <p id="qualification-result" class="font-bold text-2xl mb-6"></p>
-                    <button type='button' id="resetBtn" class="mx-auto rounded-xl font-bold p-6 py-2 bg-gray-800 text-white text-xl border-none cursor-pointer hover:bg-gray-500 hidden"
-                    onclick="resetForm()">Reset</button>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="text-center shadow-md bg-black lg:text-left font-mono"></footer>
 
     <script src="scriptQC.js"></script>
 </body>

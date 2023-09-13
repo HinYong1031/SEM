@@ -578,13 +578,13 @@ function submitForm() {
 
 // Qualified
 function success() {
-    document.getElementById("qualification-result").textContent = "Congratulations! You are Qualified.";
+    document.getElementById("qualification-result").textContent = "Congratulations! You are qualified.";
     document.getElementById("qualification-result").style.color = "green";
 }
 
 // Unqualified
 function failed() {
-    document.getElementById("qualification-result").textContent = "Sorry, you are not Qualified.";
+    document.getElementById("qualification-result").textContent = "Sorry, you are not qualified.";
     document.getElementById("qualification-result").style.color = "red";
 }
 
