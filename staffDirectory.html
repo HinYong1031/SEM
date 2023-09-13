@@ -15,12 +15,18 @@
     <!-- Link to Tailwind Elements -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
-    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <!-- Link to tailwind -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <!-- Link to Tailwind Elements -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    <script src="headerFooter.js"></script>
 
     <title>FOCS</title>
 </head>
 
 <body>
+
+    <header></header>
 
     <div class="container mx-auto p-6">
         <h1 class="text-2xl font-semibold mb-4">Staff Directory</h1>
@@ -52,53 +58,6 @@
         </div>
     </div>
 
-    <script>
-        // Sample data (replace with your actual data)
-        const staffData = [
-            { name: 'John Doe', department: 'HR', position: 'Manager', image: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png' },
-            { name: 'Jane Smith', department: 'Engineering', position: 'Developer', image: 'jane-smith.jpg' },
-            // Add more staff data as needed
-        ];
-
-        const searchInput = document.getElementById('searchInput');
-        const filterSelect = document.getElementById('filterSelect');
-        const staffDirectory = document.getElementById('staffDirectory');
-
-        // Function to render the staff directory cards based on filters
-        function renderStaffDirectory() {
-            const searchText = searchInput.value.toLowerCase();
-            const filterValue = filterSelect.value.toLowerCase();
-
-            const filteredData = staffData.filter((staff) => {
-                const nameMatch = staff.name.toLowerCase().includes(searchText);
-                const departmentMatch = filterValue === '' || staff.department.toLowerCase() === filterValue;
-                return nameMatch && departmentMatch;
-            });
-
-            staffDirectory.innerHTML = ''; // Clear previous content
-
-            filteredData.forEach((staff) => {
-                const card = document.createElement('div');
-                card.className = 'bg-gray-50 p-4 rounded-lg shadow-md flex items-center'; // Added 'flex items-center' for centering
-                card.innerHTML = `
-                    <img src="${staff.image}" alt="${staff.name}" class="w-20 h-20 rounded mr-4"> <!-- Added image -->
-                    <div>
-                        <h2 class="text-lg font-semibold">${staff.name}</h2>
-                        <p class="text-gray-600">Department: ${staff.department}</p>
-                        <p class="text-gray-600">Position: ${staff.position}</p>
-                    </div>
-                `;
-                staffDirectory.appendChild(card);
-            });
-        }
-
-        // Event listeners for search and filter
-        searchInput.addEventListener('input', renderStaffDirectory);
-        filterSelect.addEventListener('change', renderStaffDirectory);
-
-        // Initial render
-        renderStaffDirectory();
-    </script>
 
     <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
         <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
@@ -310,11 +269,55 @@
         </div>
     </div>
 
+    <footer class="text-center shadow-md bg-black lg:text-left font-mono"></footer>
 
-    <!-- Link to tailwind -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-    <!-- Link to Tailwind Elements -->
-    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    <script>
+        // Sample data (replace with your actual data)
+        const staffData = [
+            { name: 'John Doe', department: 'HR', position: 'Manager', image: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png' },
+            { name: 'Jane Smith', department: 'Engineering', position: 'Developer', image: 'jane-smith.jpg' },
+            // Add more staff data as needed
+        ];
+
+        const searchInput = document.getElementById('searchInput');
+        const filterSelect = document.getElementById('filterSelect');
+        const staffDirectory = document.getElementById('staffDirectory');
+
+        // Function to render the staff directory cards based on filters
+        function renderStaffDirectory() {
+            const searchText = searchInput.value.toLowerCase();
+            const filterValue = filterSelect.value.toLowerCase();
+
+            const filteredData = staffData.filter((staff) => {
+                const nameMatch = staff.name.toLowerCase().includes(searchText);
+                const departmentMatch = filterValue === '' || staff.department.toLowerCase() === filterValue;
+                return nameMatch && departmentMatch;
+            });
+
+            staffDirectory.innerHTML = ''; // Clear previous content
+
+            filteredData.forEach((staff) => {
+                const card = document.createElement('div');
+                card.className = 'bg-gray-50 p-4 rounded-lg shadow-md flex items-center mb-4'; // Added 'flex items-center' for centering
+                card.innerHTML = `
+                    <img src="${staff.image}" alt="${staff.name}" class="w-20 h-20 rounded mr-4"> <!-- Added image -->
+                    <div>
+                        <h2 class="text-lg font-semibold">${staff.name}</h2>
+                        <p class="text-gray-600">Department: ${staff.department}</p>
+                        <p class="text-gray-600">Position: ${staff.position}</p>
+                    </div>
+                `;
+                staffDirectory.appendChild(card);
+            });
+        }
+
+        // Event listeners for search and filter
+        searchInput.addEventListener('input', renderStaffDirectory);
+        filterSelect.addEventListener('change', renderStaffDirectory);
+
+        // Initial render
+        renderStaffDirectory();
+    </script>
 </body>
 
 </html>
