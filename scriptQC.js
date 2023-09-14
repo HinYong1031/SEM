@@ -455,7 +455,6 @@ currentSelect28.addEventListener('change', () => {
 // Submission
 function submitForm() {
     document.getElementById(`submitBtn`).style.display = "none";
-    document.getElementById(`resetBtn`).style.display = "block";
 
     // Diploma
     const answer2 = document.getElementById("answer-2").value;
@@ -578,14 +577,56 @@ function submitForm() {
 
 // Qualified
 function success() {
-    document.getElementById("qualification-result").textContent = "Congratulations! You are Qualified.";
+    const answer2 = document.getElementById("answer-2").value;
+    const answer9 = document.getElementById("answer-9").value;
+    let qualifiedProgram = "";
+
+    // Diploma program names
+    if (answer2 === "DiplomaCS") {
+        qualifiedProgram = "Diploma in Computer Science";
+    } else if (answer2 === "DiplomaIS") {
+        qualifiedProgram = "Diploma in Information Systems";
+    } else if (answer2 === "DiplomaIT") {
+        qualifiedProgram = "Diploma in Information Technology";
+    } else if (answer2 === "DiplomaSE") {
+        qualifiedProgram = "Diploma in Software Engineering";
+    }
+    // Degree program names
+    else if (answer9 === "BachelorS-MM") {
+        qualifiedProgram = "Bachelor of Science (Honours) in Management Mathematics with Computing";
+    } else if (answer9 === "BachelorCS-IST") {
+        qualifiedProgram = "Bachelor of Computer Science (Honours) in Interactive Software Technology";
+    } else if (answer9 === "BachelorCS-DS") {
+        qualifiedProgram = "Bachelor of Computer Science (Honours) in Data Science";
+    } else if (answer9 === "BachelorSE") {
+        qualifiedProgram = "Bachelor of Software Engineering (Honours)";
+    } else if (answer9 === "BachelorIS-EIS") {
+        qualifiedProgram = "Bachelor of Information Systems (Honours) in Enterprise Information Systems";
+    } else if (answer9 === "BachelorIT-IS") {
+        qualifiedProgram = "Bachelor of Information Technology (Honours) in Information Security";
+    } else if (answer9 === "BachelorIT-IT") {
+        qualifiedProgram = "Bachelor of Information Technology (Honours) in Internet Technology";
+    } else if (answer9 === "BachelorIT-SSD") {
+        qualifiedProgram = "Bachelor of Information Technology (Honours) in Software Systems Development";
+    }
+
+    document.getElementById("qualification-result").textContent = "Congratulations! You are qualified to apply...";
+    document.getElementById("qualification-program").textContent = qualifiedProgram;
     document.getElementById("qualification-result").style.color = "green";
+    document.getElementById("qualification-program").style.color = "green";
+    document.getElementById(`applyBtn`).style.display = "block";
+}
+
+// Apply program
+function apply() {
+    //TODO
 }
 
 // Unqualified
 function failed() {
-    document.getElementById("qualification-result").textContent = "Sorry, you are not Qualified.";
+    document.getElementById("qualification-result").textContent = "Sorry, you are not qualified.";
     document.getElementById("qualification-result").style.color = "red";
+    document.getElementById(`resetBtn`).style.display = "block";
 }
 
 // Reset form
