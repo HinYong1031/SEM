@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to tailwind -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Link to FontAwesome -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Link to Tailwind Elements -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <script src="headerFooter.js"></script>
+    <title>FOCS</title>
+</head>
+<style>
+    body {
+        margin: 10px 60px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    h1,
+    h4,
+    ol {
+        margin: 0;
+    }
+
+    p {
+        margin: 5px 0;
+    }
+
+    .top-bar {
+        background-color: skyblue;
+        padding: 0 40px;
+    }
+
+    .main {
+        background-color: #F6F6EF;
+        padding: 10px 15px;
+    }
+
+    .row {
+        padding: 5px 0;
+    }
+
+    .bottom {
+        display: flex;
+        color: grey;
+        font-size: 12px;
+    }
+
+    .timestamp {
+        padding-right: 10px;
+    }
+</style>
+<body>
+
+    <header></header>
+
+    <!--Your super duper perfect content here-->
+    <div class="top-bar">
+        <h1>
+            My Forum
+        </h1>
+    </div>
+    <div class="main">
+        <ol>
+        </ol>
+    </div>
+    <button id="add-thread-button">Add Thread</button> <!-- Add the button here -->
+    <form id="thread-form" style="display: none;"> <!-- Hide the form initially -->
+        <label for="title">Thread Title:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" required>
+
+        <label for="content">Thread Content:</label>
+        <textarea id="content" name="content" required></textarea>
+
+        <input type="submit" value="Create Thread">
+    </form>
+    <script src="data.js"></script>
+    <script>
+        console.log(threads);
+        var container = document.querySelector('ol');
+        for (let thread of threads) {
+            var html = `
+                <li class="row">
+                    <a href="/thread.html?${thread.id}">
+                        <h4 class="title">
+                            ${thread.title}
+                        </h4>
+                        <div class="bottom">
+                            <p class="timestamp">
+                                ${new Date(thread.date).toLocaleString()}
+                            </p>
+                            <p class="comment-count">
+                                ${thread.comments.length} comments
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                `
+            container.insertAdjacentHTML('beforeend', html);
+        }
+        // Function to show or hide the form
+        function toggleFormVisibility() {
+            var form = document.getElementById('thread-form');
+            if (form.style.display === 'none') {
+                form.style.display = 'block';
+            } else {
+                form.style.display = 'none';
+            }
+        }
+
+        // Add an event listener to the button to toggle the form
+        document.getElementById('add-thread-button').addEventListener('click', function (e) {
+            e.preventDefault();
+            toggleFormVisibility();
+        });
+
+        // Add an event listener to the form for submitting new threads
+        document.getElementById('thread-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            var title = document.getElementById('title').value;
+            var author = document.getElementById('author').value;
+            var content = document.getElementById('content').value;
+            var date = Date.now();
+
+            var newThread = {
+                id: threads.length + 1,
+                title: title,
+                author: author,
+                date: date,
+                content: content,
+                comments: []
+            };
+
+            threads.push(newThread);
+
+            // Update the local storage
+            localStorage.setItem('threads', JSON.stringify(threads));
+
+            // Reset the form
+            document.getElementById('thread-form').reset();
+
+            // Refresh the page
+            location.reload();
+
+            // Optional: Update the defaultThreads as well
+            defaultThreads.push(newThread);
+        });
+    </script>
+
+    <!--End of your super duper perfect content-->
+
+
+    <footer class="text-center shadow-md bg-black lg:text-left font-mono"></footer>
+    <!-- Link to tailwind -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <!-- Link to Tailwind Elements -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+
+</body>
+
+</html>
