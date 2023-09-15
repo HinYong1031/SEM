@@ -2,22 +2,24 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Link to tailwind -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to tailwind -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Link to FontAwesome -->
-  <link rel="stylesheet" type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Link to FontAwesome -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-  <!-- Link to Tailwind Elements -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
-  <script src="headerFooter.js"></script>
-
-  <title>FOCS</title>
+    <!-- Link to Tailwind Elements -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <!--Link jQuery-->
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src="headerFooter.js"></script>
+    <title>FOCS</title>
 </head>
 
 <body>
@@ -169,7 +171,7 @@
               </div>
               <div class="p-6">
                 <h5 class="mb-4 text-lg font-semibold  ">Programme Overview</h5>
-                <p>
+                <p class="text-justify">
                   This programme equips students with the fundamental knowledge of software engineering with practical and analytical thinking skills in software development.
                 </p>
               </div>
@@ -285,10 +287,10 @@
       role="tabpanel"
       aria-labelledby="pills-entryreq-tab"
       data-te-tab-active>
-      <h2 class="mt-10 text-3xl font-bold text-center">Minimum Entry Requirements</h2>
+      <h2 class="mt-10 mb-10 text-3xl font-bold text-center">Minimum Entry Requirements</h2>
       <div class="flex lg:py-12">
         <img src="img/dcsEntryReq.jpg"
-          class="z-[10] mx-auto w-9/12 rounded-lg shadow-lg dark:shadow-black/20" alt="image" />
+          class="z-[10] mb-20 mx-auto w-9/12 rounded-lg shadow-lg dark:shadow-black/20" alt="image" />
       </div>
     </div>
     <div
@@ -910,15 +912,19 @@
   </div>
   </div>
 
-    <!-- Footer container -->
+    <!--footer-->
     <footer class="text-center shadow-md bg-black lg:text-left font-mono"></footer>
-
+    <!-- Button trigger modal -->
+    <button type="button" data-te-toggle="modal" data-te-target="#rightTopModal" data-te-ripple-init data-te-ripple-color="light"></button>
     <!-- Link to tailwind -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     
     <!-- Link to Tailwind Elements -->
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
     <script src="programme.js"></script>
+    <script src="ipAPI.js"></script>
+
+ 
 </body>
 
 </html>

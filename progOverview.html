@@ -15,6 +15,9 @@
     <!-- Link to Tailwind Elements -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <!--Link jQuery-->
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     <script src="headerFooter.js"></script>
     <title>FOCS</title>
 </head>
@@ -101,76 +104,82 @@
 
 <!--Pills navigation-->
 <div class="container mx-auto px-4 mt-20">
-<ul
-  class="mb-5 flex list-none flex-col flex-wrap pl-0 md:flex-row"
-  role="tablist"
-  data-te-nav-ref>
-  <li role="presentation" class="flex-auto text-center">
-    <a
-      href="#pills-home01"
-      class="my-2 block rounded bg-neutral-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[te-nav-active]:!bg-primary-100 data-[te-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white dark:data-[te-nav-active]:text-primary-700 md:mr-4"
-      id="pills-home-tab01"
-      data-te-toggle="pill"
-      data-te-target="#pills-home01"
-      data-te-nav-active
-      role="tab"
-      aria-controls="pills-home01"
-      aria-selected="true"
-      >Diploma</a>
-  </li>
-  <li role="profile" class="flex-auto text-center">
-    <a
-      href="#pills-profile01"
-      class="my-2 block rounded bg-neutral-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight  text-neutral-500 data-[te-nav-active]:!bg-primary-100 data-[te-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white dark:data-[te-nav-active]:text-primary-700 md:mr-4"
-      id="pills-profile-tab01"
-      data-te-toggle="pill"
-      data-te-target="#pills-profile01"
-      role="tab"
-      aria-controls="pills-profile01"
-      aria-selected="false"
-      >Degree</a>     
-  </li>
-</ul>
-
-<!--Pills content-->
-<div class="mb-6">
-  <div
-    class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-    id="pills-home01"
-    role="tabpanel"
-    aria-labelledby="pills-home-tab01"
-    data-te-tab-active>
-    <div class="container mx-auto mt-20">
-        <div id="root-diploma" class="grid grid-cols-2 md:grid-cols-4 gap-4"></div>
+  <ul
+    class="mb-5 flex list-none flex-col flex-wrap pl-0 md:flex-row"
+    role="tablist"
+    data-te-nav-ref>
+    <li role="presentation" class="flex-auto text-center">
+      <a
+        href="#pills-home01"
+        class="my-2 block rounded bg-neutral-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[te-nav-active]:!bg-primary-100 data-[te-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white dark:data-[te-nav-active]:text-primary-700 md:mr-4"
+        id="pills-home-tab01"
+        data-te-toggle="pill"
+        data-te-target="#pills-home01"
+        data-te-nav-active
+        role="tab"
+        aria-controls="pills-home01"
+        aria-selected="true"
+        >Diploma</a>
+    </li>
+    <li role="profile" class="flex-auto text-center">
+      <a
+        href="#pills-profile01"
+        class="my-2 block rounded bg-neutral-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight  text-neutral-500 data-[te-nav-active]:!bg-primary-100 data-[te-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white dark:data-[te-nav-active]:text-primary-700 md:mr-4"
+        id="pills-profile-tab01"
+        data-te-toggle="pill"
+        data-te-target="#pills-profile01"
+        role="tab"
+        aria-controls="pills-profile01"
+        aria-selected="false"
+        >Degree</a>     
+    </li>
+  </ul>
+  
+  <!--Pills content-->
+  <div class="mb-6">
+    <div
+      class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+      id="pills-home01"
+      role="tabpanel"
+      aria-labelledby="pills-home-tab01"
+      data-te-tab-active>
+      <div class="container mx-auto mt-20">
+          <div id="root-diploma" class="grid grid-cols-2 md:grid-cols-4 gap-4"></div>
+      </div>
+    </div>
+    <div
+      class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:none"
+      id="pills-profile01"
+      role="tabpanel"
+      aria-labelledby="pills-profile-tab01"
+      data-te-tab-active>
+      <div class="container mx-auto mt-10">
+        
+        <div id="buttons" class="my-4 text-center">
+          <button id="showAllDegrees" type="button" class="py-2.5 px-5 mr-2 mb-10 text-sm font-s text-blue-600 focus:outline-none bg-white rounded-full border border-blue-600 hover:bg-pink-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-200 focus:bg-pink-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">All</button>
+          <button id="btns" type="button"></button>
+        
+          <div id="root-degree" class="grid grid-cols-2 md:grid-cols-4 gap-4"></div>
+      </div>
+  
     </div>
   </div>
-  <div
-    class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:none"
-    id="pills-profile01"
-    role="tabpanel"
-    aria-labelledby="pills-profile-tab01"
-    data-te-tab-active>
-    <div class="container mx-auto mt-10">
-      
-      <div id="buttons" class="my-4 text-center">
-        <button id="showAllDegrees" type="button" class="py-2.5 px-5 mr-2 mb-10 text-sm font-s text-blue-600 focus:outline-none bg-white rounded-full border border-blue-600 hover:bg-pink-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-200 focus:bg-pink-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">All</button>
-        <button id="btns" type="button"></button>
-      
-        <div id="root-degree" class="grid grid-cols-2 md:grid-cols-4 gap-4"></div>
-    </div>
-
   </div>
-</div>
-</div>
-</div>
+  </div>
+  
 
+    <!--footer-->
     <footer class="text-center shadow-md bg-black lg:text-left font-mono"></footer>
+    <!-- Button trigger modal -->
+    <button type="button" data-te-toggle="modal" data-te-target="#rightTopModal" data-te-ripple-init data-te-ripple-color="light"></button>
     <!-- Link to tailwind -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     
     <!-- Link to Tailwind Elements -->
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
     <script src="progOverview.js"></script>
+    <script src="ipAPI.js"></script>
+    
 
 </body>
 
