@@ -1,4 +1,3 @@
-// Sample data (replace with your actual data)
 // Function to fetch and load JSON data
 async function loadJSON() {
     try {
@@ -59,19 +58,23 @@ async function renderStaffDirectory() {
         staffDirectory.appendChild(card);
     });
     
-    // // Toggle visibility of the "Previous Page" button
-    // if (currentPage === 1) {
-    //     prevPageButton.style.visibility = 'hidden'; // Hide the button
-    // } else {
-    //     prevPageButton.style.visibility = 'visible'; // Show the button
-    // }
+    // Toggle visibility of the "Previous Page" button
+    if (currentPage === 1) {
+        prevPageButton.attributes.disabled = true; // Disable the button
+        prevPageButton.style.cursor = 'not-allowed'; // Change the cursor style
+    } else {
+        prevPageButton.attributes.disabled = false; // Enable the button
+        prevPageButton.style.cursor = 'pointer'; // Change the cursor style
+    }
 
-    // // Toggle visibility of the "Next Page" button
-    // if (endIndex >= filteredData.length) {
-    //     nextPageButton.style.display = 'none'; // Hide the button
-    // } else {
-    //     nextPageButton.style.display = 'flex'; // Show the button
-    // }
+    // Toggle visibility of the "Next Page" button
+    if (endIndex >= filteredData.length) {
+        nextPageButton.attributes.disabled = true; // Disable the button
+        nextPageButton.style.cursor = 'not-allowed'; // Change the cursor style
+    } else {
+        nextPageButton.attributes.disabled = false; // Enable the button
+        nextPageButton.style.cursor = 'pointer'; // Change the cursor style
+    }
 }
 
 // Event listeners for search and filter
