@@ -17,10 +17,43 @@ const filterSelect = document.getElementById('filterSelect');
 const staffDirectory = document.getElementById('staffDirectory');
 const prevPageButton = document.getElementById('prevPage');
 const nextPageButton = document.getElementById('nextPage');
+const modal = document.getElementById('defaultModal');
 
 let currentPage = 1;
 const itemsPerPage = 12;
 let searchText = ''; // Store search text separately
+
+// Function to toggle the modal and display staff data
+function toggleModal(staff) {
+    openModal(staff);
+}
+
+function openModal(staff) {
+    const modalImage = document.getElementById('modalImage');
+    const modalName = document.getElementById('modalName');
+    const modalDes = document.getElementById('modalDesignation');
+    const modalPosition = document.getElementById('modalPosition');
+    const modalDep = document.getElementById('modalDepartment');
+    const modalEdu = document.getElementById('modalEdu');
+    const bottomPart = document.getElementById('bottomPart');
+
+    modalImage.src = staff.image;
+    modalName.textContent = staff.name;
+    modalDes.textContent = staff.designation ? staff.designation : '';
+    modalPosition.textContent = staff.position ? staff.position : '';
+    modalEdu.textContent = staff.education ? staff.education : '';
+    modalDep.textContent = staff.department ? staff.department : '';
+    bottomPart.innerHTML = `
+        ${staff.major ? `<span class="font-medium">Major of Study/Specialization:</span> ${staff.major}` : ''}
+        <br>
+        ${staff.interest ? `<span class="font-medium">Area of Interest:</span> ${staff.interest}` : ''}
+        <br>
+        <i class="fa-solid fa-envelope fa-lg"></i> ${staff.email} 
+    `;
+
+    modal.classList.remove('hidden'); // Show the modal
+}
+
 
 // Function to render the staff directory cards based on filters
 async function renderStaffDirectory() {
@@ -55,6 +88,11 @@ async function renderStaffDirectory() {
                         
                     </div>
                 `;
+
+        // Add a click event listener to the card to toggle the modal
+        card.addEventListener('click', () => {
+            toggleModal(staff);
+        });
         staffDirectory.appendChild(card);
     });
     
