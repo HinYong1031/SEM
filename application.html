@@ -188,7 +188,7 @@
                         <div class="sm:col-span-3">
                             <label for="campus" class="block text-sm font-bold leading-6 text-gray-900">Campus</label>
                             <div class="mt-2">
-                                <select id="campus" name="campus" autocomplete="campus" class="px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                <select id="campus" name="campus" class="px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                                 <option>--Select your preferred campus--</option>
                                 <option>JH-Johor</option>
                                 <option>KL-Kuala Lumpur</option>
@@ -203,10 +203,10 @@
                         <div class="sm:col-span-3">
                             <label for="level" class="block text-sm font-bold leading-6 text-gray-900">Level of Study</label>
                             <div class="mt-2">
-                                <select id="level" name="level" autocomplete="level" class="px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                                <option>--Select your level--</option>
-                                <option>Diploma</option>
-                                <option>Degree</option>
+                                <select id="level" name="level" disabled class="px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                    <option>--Select your level--</option>
+                                    <option>Diploma</option>
+                                    <option>Degree</option>
                                 </select>
                             </div>
                         </div>
@@ -214,20 +214,20 @@
                         <div class="col-span-full">
                             <label for="programme" class="block text-sm font-bold leading-6 text-gray-900">Programme</label>
                             <div class="mt-2">
-                                <select id="programme" name="programme" autocomplete="programme" class="px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                                <option>--Select programme--</option>
-                                <option>Diploma in Computer Science</option>
-                                <option>Diploma in Information Systems</option>
-                                <option>Diploma in Information Technology</option>
-                                <option>Diploma in Software Engineering</option>
-                                <option>Bachelor of Science (Honours) in Management Mathematics with Computing</option>
-                                <option>Bachelor of Computer Science (Honours) in Interactive Software Technology</option>
-                                <option>Bachelor of Computer Science (Honours) in Data Science</option>
-                                <option>Bachelor of Software Engineering (Honours)</option>
-                                <option>Bachelor of Information Systems (Honours) in Enterprise Information Systems</option>
-                                <option>Bachelor of Information Technology (Honours) in Information Security</option>
-                                <option>Bachelor of Information Technology (Honours) in Internet Technology</option>
-                                <option>Bachelor of Information Technology (Honours) in Software Systems Development</option>
+                                <select id="programme" name="programme" disabled class="px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                    <option>--Select programme--</option>
+                                    <option>Diploma in Computer Science</option>
+                                    <option>Diploma in Information Systems</option>
+                                    <option>Diploma in Information Technology</option>
+                                    <option>Diploma in Software Engineering</option>
+                                    <option>Bachelor of Science (Honours) in Management Mathematics with Computing</option>
+                                    <option>Bachelor of Computer Science (Honours) in Interactive Software Technology</option>
+                                    <option>Bachelor of Computer Science (Honours) in Data Science</option>
+                                    <option>Bachelor of Software Engineering (Honours)</option>
+                                    <option>Bachelor of Information Systems (Honours) in Enterprise Information Systems</option>
+                                    <option>Bachelor of Information Technology (Honours) in Information Security</option>
+                                    <option>Bachelor of Information Technology (Honours) in Internet Technology</option>
+                                    <option>Bachelor of Information Technology (Honours) in Software Systems Development</option>
                                 </select>
                             </div>
                         </div>
@@ -322,6 +322,7 @@
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
     
     <script src="ipAPI.js"></script>
+    <script src="application.js"></script>
         
 </body>
 
