@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
     <!-- Link to Ip API-->
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="headerFooter.js"></script>
     <title>FOCS</title>
 </head>
@@ -24,22 +24,34 @@
     <header></header>
 
     <div class="container mx-auto">
-        <div class="relative overflow-hidden bg-cover bg-no-repeat bg-[50%] h-[300px] bg-[url('https://tecdn.b-cdn.net/img/new/standard/city/078.jpg')] mb-16">
-            <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0.75)]">
-                <div class="flex h-full items-center justify-center">
-                    <div class="px-6 text-center text-white md:px-12">
-                        <h1 class="mt-6 mb-16 text-base font-bold tracking-tight md:text-2xl xl:text-5xl">
-                            Staff Directory
-                        </h1>
+        <div class="overflow-hidden">
+            <div
+                class="relative overflow-hidden bg-cover bg-no-repeat bg-[50%] h-[500px] bg-[url('img/staffDirHeader.jpg')]">
+                <div
+                    class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0.75)]">
+                    <div class="flex h-full items-center justify-center">
+                        <div class="px-6 text-center text-white md:px-12">
+                            <p class="mt-12 mb-0 text-xl font-bold tracking-tight md:text-2xl xl:text-5xl">
+                                Staff Directory
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
 
-        <div class="mx-44 flex flex-wrap place-content-around">
+            <div
+                class="-mt-2.5 text-white dark:text-neutral-800 md:-mt-4 lg:-mt-6 xl:-mt-10 h-[50px] scale-[2] origin-[top_center]">
+                <svg viewBox="0 0 2880 48" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M 0 48 L 1437.5 48 L 2880 48 L 2880 0 L 2160 0 C 1453.324 60.118 726.013 4.51 720 0 L 0 0 L 0 48 Z"
+                        fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="mx-44 flex flex-wrap place-content-around mt-10">
             <select id="filterSelect"
-                class="py-3 px-4 pr-9 block w-full xl:w-1/3 border-gray-200 rounded-full text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
+                class="py-3 px-4 pr-9 block w-full xl:w-1/3 border-gray-500 rounded-full text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
                 <option value="">All Department</option>
                 <option value="Faculty of Computing And Information Technology">
                     Faculty of Computing And Information Technology</option>
@@ -64,7 +76,7 @@
                     </svg>
                 </div>
                 <input type="search" id="searchInput"
-                    class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-full bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-500 rounded-full bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="Search by name..." />
             </div>
         </div>
@@ -152,7 +164,8 @@
         </div>
     </div>
 
-    <button type="button" data-te-toggle="modal" data-te-target="#rightTopModal" data-te-ripple-init data-te-ripple-color="light"></button>
+    <button type="button" data-te-toggle="modal" data-te-target="#rightTopModal" data-te-ripple-init
+        data-te-ripple-color="light"></button>
 
     <footer class="text-center shadow-md bg-black lg:text-left font-mono"></footer>
 

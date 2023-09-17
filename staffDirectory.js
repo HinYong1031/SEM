@@ -48,7 +48,7 @@ function openModal(staff) {
         <br>
         ${staff.interest ? `<span class="font-medium">Area of Interest:</span> ${staff.interest}` : ''}
         <br>
-        <i class="fa-solid fa-envelope fa-lg"></i> ${staff.email} 
+        <a href="mailto:${staff.email}"><i class="fa-solid fa-envelope fa-lg"></i> ${staff.email}</a>
     `;
 
     modal.classList.remove('hidden'); // Show the modal
