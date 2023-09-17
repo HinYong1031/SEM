@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to tailwind -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Link to FontAwesome -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Link to Tailwind Elements -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <title>course Comparison</title>
+</head>
+<body class="m-8"> 
+
+    <!--Navigate Bar-->
+    <br>
+    <div>
+        
+    </div>
+    <div>
+        <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
+            <li class="mr-2" id="diplomaListItem">
+                <a href="#" onclick="determineDatabase('diplomaListItem', event)" aria-current="page" class="inline-block p-4 text-blue-600 bg-gray-100 rounded-t-lg active dark:bg-gray-800 dark:text-blue-500"  onclick="changeStyles('diplomaListItem')">Diploma</a>
+                <div></div>
+            </li>
+            <li class="mr-2" id="bachelorListItem">
+                <a href="#" onclick="determineDatabase('bachelorListItem', event)" class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"  onclick="changeStyles('diplomaListItem')">Bachelor Degree</a>
+            </li>
+        </ul>
+    </div>
+    <!--Search Bar-->
+    <div class="flex items-center justify-center mt-6">
+        <form class="flex flex-col md:flex-row gap-3">
+            <div class="flex" id="otherInput">
+                <input id="searchInput" type="text" placeholder="Search for the tool you like"
+                    class="w-full md:w-96 px-3 h-10 rounded-l border-2 border-sky-500 focus:outline-none focus:border-sky-500">
+                <button type="submit"
+                    class="bg-sky-500 text-white rounded-r px-2 md:px-3 py-0 md:py-1">Search </button>
+            </div>
+            <select id="searchCriteria" name="pricingType"
+                class="w-full md:w-auto h-10 border-2 border-sky-500 focus:outline-none focus:border-sky-500 text-sky-500 rounded px-2 md:px-3 py-0 md:py-1 tracking-wider">
+                <option value="All" selected="">All</option>
+                <option value="programName">Program</option>
+                <option value="campus">Campus</option>
+                <option value="totalFee">Total Fee</option>
+                <option value="career">Career</option>
+            </select>
+        </form>
+    </div>
+    <span id="notice" class="flex text-orange-700 items-center justify-center hover:uppercase"  styple="display: none"></span>
+
+    <!-- Result Table -->
+    <div id="results"></div>
+    <div id="tableContainer">
+        <!-- The generated table will be inserted here -->
+    </div>
+    <script src="comparison.js"></script>
+</body>
+</html>

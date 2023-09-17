@@ -158,14 +158,13 @@ function showAllDegrees() {
 
     degreeContainer.appendChild(degreeCard);
   });
+  showAllDegreesButton.classList.add('ring-2', 'ring-blue-200', 'bg-pink-100', 'outline-none');
 }
-
 // Add a click event listener to the "All" button
 showAllDegreesButton.addEventListener('click', showAllDegrees);
 
 // By default, show all degree programs
 showAllDegrees();
-
 
 
 
@@ -182,32 +181,37 @@ const filterItems = (a)=>{
 		}
 	}
 	displayDegreePrograms(flterCategories)
+    
 }
 
 // Function to display degree program content
 const displayDegreePrograms = (degreeData) => {
+    showAllDegreesButton.classList.remove('ring-2', 'ring-blue-200', 'bg-pink-100', 'outline-none');
+    
+
     document.getElementById('root-degree').innerHTML = degreeData.map((item) => {
         var { image, title, desc, link } = item;
         return (
-            `<div class="mb-20 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            `<div class="flex flex-col mb-20 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg" src=${image} alt="" />
+            </a>
+            <div class="p-5 flex flex-col h-full">
                 <a href="#">
-                    <img class="rounded-t-lg" src=${image} alt="" />
+                    <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">${title}</h5>
                 </a>
-                <div class="p-5">
-                    <a href="#">
-                        <h5 class="px-4 mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">${title}</h5>
+                <p class="mb-3 font-normal text-justify text-gray-700 dark:text-gray-400">${desc}</p>
+                <div class="flex-grow"></div> <!-- Use flex-grow to push the button to the bottom -->
+                <div class="flex items-center justify-center">
+                    <a href=${link} class="mx-auto inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-900 rounded-lg hover:bg-pink-200 hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-pink-200 dark:focus:ring-blue-800">
+                        Read more
+                        <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
                     </a>
-                    <p class="mb-3 font-normal text-justify text-gray-700 dark:text-gray-400">${desc}</p>
-                    <div class="flex items-center justify-center">
-                        <a href=${link} class="mx-auto inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-900 rounded-lg hover:bg-pink-200 hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-pink-200 dark:focus:ring-blue-800">
-                            Read more
-                            <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                            </svg>
-                        </a>
-                    </div>
                 </div>
-            </div>`
+            </div>
+        </div>`
         );
     }).join('');
 };
@@ -295,5 +299,6 @@ tabLinks.forEach((tabLink) => {
             link.classList.remove('active'); // Remove the "active" class from all tabs
         });
         tabLink.classList.add('active'); // Add the "active" class to the clicked tab
+        showAllDegreesButton.classList.add('ring-2', 'ring-blue-200', 'bg-pink-100', 'outline-none');
     });
 });

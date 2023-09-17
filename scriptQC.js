@@ -610,11 +610,11 @@ function success() {
         qualifiedProgram = "Bachelor of Information Technology (Honours) in Software Systems Development";
     }
 
-    document.getElementById("qualification-result").textContent = "Congratulations! You are qualified to apply...";
+    document.getElementById("qualification-result").textContent = "Congratulations! You are qualified to apply";
     document.getElementById("qualification-program").textContent = qualifiedProgram;
     document.getElementById("qualification-result").style.color = "green";
-    document.getElementById("qualification-program").style.color = "green";
     document.getElementById(`applyBtn`).style.display = "block";
+    document.getElementById(`resetBtn`).style.display = "block";
 }
 
 // Apply program
@@ -627,6 +627,7 @@ function failed() {
     document.getElementById("qualification-result").textContent = "Sorry, you are not qualified.";
     document.getElementById("qualification-result").style.color = "red";
     document.getElementById(`resetBtn`).style.display = "block";
+    document.getElementById(`applyBtn`).style.display = "none";
 }
 
 // Reset form
