@@ -85,7 +85,6 @@ async function renderStaffDirectory() {
                         </h1>
                         ${staff.designation ? 
                             `<p class="mt-2 text-center text-gray-500 dark:text-gray-300 group-hover:text-gray-300"> ${staff.designation}</p>` : ''}
-                        
                     </div>
                 `;
 
