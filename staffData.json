@@ -4,11 +4,11 @@
         "department": "Faculty of Computing And Information Technology",
         "designation": "Dean",
         "position": "Senior Lecturer",
-        "education": "AdvDipSc (TARC), BS (Campbell), MInfComnTechMgt (AeU)",
+        "education": "DipIT (PTPL), BSc (Hons) (Staffs), ExecDipMgt, MCompSc (Mal), P.Tech",
         "email": "limsh@tarc.edu.my",
         "major": "Management Information Systems",
         "interest": "Information Security, Networking",
-        "image": "img/LimSH.jpg"
+        "image": "img/staff/LimSH.jpg"
     },
     {
         "name": "Dr Wong Thein Lai",
@@ -19,127 +19,328 @@
         "email": "wongtl@tarc.edu.my",
         "major": "Information Security",
         "interest": "Blockchain, Networking, Data Sharing Framework for IR4.0",
-        "image": "img/WongTL.jpg"
+        "image": "img/staff/WongTL.jpg"
     },
     {
-        "name": "Dr Wong Thein Lai",
+        "name": "Ts. Chok Len Mooi",
         "department": "Faculty of Computing And Information Technology",
-        "designation": "Deputy Dean (Research & Development)",
-        "position": "Assistant Professor",
-        "education": "BAppSc (Hons) (USM), MInfScTech, PhD (Osaka)",
-        "email": "wongtl@tarc.edu.my",
-        "major": "Information Security",
-        "interest": "Blockchain, Networking, Data Sharing Framework for IR4.0",
-        "image": "img/WongTL.jpg"
+        "designation": "Deputy Dean (Academic)",
+        "position": "Principal Lecturer",
+        "education": "BEng (Hons), MInfTech (Mal), CCNA ITQ, P.Tech., CCNA certified",
+        "email": "choklm@tarc.edu.my",
+        "major": "Networking",
+        "interest": "Networking, Network Security",
+        "image": "img/staff/ChokLM.jpg"
     },
     {
-        "name": "Dr Wong Thein Lai",
+        "name": "Encik Ooi Chun Pew",
         "department": "Faculty of Computing And Information Technology",
-        "designation": "Deputy Dean (Research & Development)",
-        "position": "Assistant Professor",
-        "education": "BAppSc (Hons) (USM), MInfScTech, PhD (Osaka)",
-        "email": "wongtl@tarc.edu.my",
-        "major": "Information Security",
-        "interest": "Blockchain, Networking, Data Sharing Framework for IR4.0",
-        "image": "img/WongTL.jpg"
+        "designation": "Deputy Dean (Academic)",
+        "position": "Senior Lecturer",
+        "education": "AdvDipSc (TARC), BS (Campbell), MInfComnTechMgt (AeU)",
+        "email": "cpooi@tarc.edu.my",
+        "major": "Information and Communication Technology Management",
+        "interest": "Systems Analysis and Design, Management Information Systems, Enterprise Resource Planning",
+        "image": "img/staff/OoiCP.jpg"
     },
     {
-        "name": "Dr Wong Thein Lai",
+        "name": "Puan Choy Lai Fun",
         "department": "Faculty of Computing And Information Technology",
-        "designation": "Deputy Dean (Research & Development)",
-        "position": "Assistant Professor",
-        "education": "BAppSc (Hons) (USM), MInfScTech, PhD (Osaka)",
-        "email": "wongtl@tarc.edu.my",
-        "major": "Information Security",
-        "interest": "Blockchain, Networking, Data Sharing Framework for IR4.0",
-        "image": "img/WongTL.jpg"
+        "designation": "Associate Dean For Quality Assurance",
+        "position": "Senior Lecturer",
+        "education": "AdvDipSc (TARC), BS (Campbell), MInfComnTechMgt (AeU)",
+        "email": "choylf@tarc.edu.my",
+        "major": "ICT management, e-commerce, Computer systems architecture",
+        "interest": "Big data, Web development, Mobile development",
+        "image": "img/staff/ChoyLF.jpg"
     },
     {
-        "name": "Dr Wong Thein Lai",
+        "name": "Puan Wong Mung Lan",
         "department": "Faculty of Computing And Information Technology",
-        "designation": "Deputy Dean (Research & Development)",
-        "position": "Assistant Professor",
-        "education": "BAppSc (Hons) (USM), MInfScTech, PhD (Osaka)",
-        "email": "wongtl@tarc.edu.my",
-        "major": "Information Security",
-        "interest": "Blockchain, Networking, Data Sharing Framework for IR4.0",
-        "image": "img/WongTL.jpg"
+        "designation": "Manager",
+        "education": "AdvDipComm (TARC)",
+        "email": "wongml@tarc.edu.my",
+        "image": "img/staff/WongML.jpg"
     },
     {
-        "name": "Dr Wong Thein Lai",
+        "name": "Puan Choong Siew Ling",
         "department": "Faculty of Computing And Information Technology",
-        "designation": "Deputy Dean (Research & Development)",
-        "position": "Assistant Professor",
-        "education": "BAppSc (Hons) (USM), MInfScTech, PhD (Osaka)",
-        "email": "wongtl@tarc.edu.my",
-        "major": "Information Security",
-        "interest": "Blockchain, Networking, Data Sharing Framework for IR4.0",
-        "image": "img/WongTL.jpg"
+        "designation": "Senior Assistant Registrar",
+        "education": "BBA (Hons) (UTAR), CEMBA (WOU)",
+        "email": "choongsl@tarc.edu.my",
+        "image": "img/staff/ChoongSL.jpg"
     },
     {
-        "name": "Dr Wong Thein Lai",
+        "name": "Cik Chan Pui Mun",
         "department": "Faculty of Computing And Information Technology",
-        "designation": "Deputy Dean (Research & Development)",
-        "position": "Assistant Professor",
-        "education": "BAppSc (Hons) (USM), MInfScTech, PhD (Osaka)",
-        "email": "wongtl@tarc.edu.my",
-        "major": "Information Security",
-        "interest": "Blockchain, Networking, Data Sharing Framework for IR4.0",
-        "image": "img/WongTL.jpg"
+        "designation": "Assistant Registrar",
+        "education": "DipBS (TARC), BA (Hons) (Greenwich)",
+        "email": "chanpm@tarc.edu.my",
+        "image": "img/staff/ChanPM.jpg"
     },
     {
-        "name": "Dr Wong Thein Lai",
+        "name": "Encik Ian Cheah Hock Choon",
         "department": "Faculty of Computing And Information Technology",
-        "designation": "Deputy Dean (Research & Development)",
-        "position": "Assistant Professor",
-        "education": "BAppSc (Hons) (USM), MInfScTech, PhD (Osaka)",
-        "email": "wongtl@tarc.edu.my",
-        "major": "Information Security",
-        "interest": "Blockchain, Networking, Data Sharing Framework for IR4.0",
-        "image": "img/WongTL.jpg"
+        "designation": "Assistant Registrar",
+        "education": "BMgt (Hons) (OUM)",
+        "email": "cheahhc@tarc.edu.my",
+        "image": "img/staff/Ian.jpg"
     },
     {
-        "name": "Dr Wong Thein Lai",
+        "name": "Puan Nurul Nadiah Binti Mohamad Azni",
         "department": "Faculty of Computing And Information Technology",
-        "designation": "Deputy Dean (Research & Development)",
-        "position": "Assistant Professor",
-        "education": "BAppSc (Hons) (USM), MInfScTech, PhD (Osaka)",
-        "email": "wongtl@tarc.edu.my",
-        "major": "Information Security",
-        "interest": "Blockchain, Networking, Data Sharing Framework for IR4.0",
-        "image": "img/WongTL.jpg"
+        "designation": "Assistant Registrar",
+        "education": "BAppSc (Hons) (USM)",
+        "email": "nurulnadiah@tarc.edu.my",
+        "image": "img/staff/Nurul.jpg"
     },
     {
-        "name": "Dr Wong Thein Lai",
+        "name": "Cik Tan See Theng",
         "department": "Faculty of Computing And Information Technology",
-        "designation": "Deputy Dean (Research & Development)",
-        "position": "Assistant Professor",
-        "education": "BAppSc (Hons) (USM), MInfScTech, PhD (Osaka)",
-        "email": "wongtl@tarc.edu.my",
-        "major": "Information Security",
-        "interest": "Blockchain, Networking, Data Sharing Framework for IR4.0",
-        "image": "img/WongTL.jpg"
+        "designation": "Assistant Registrar",
+        "education": "DipBS, BBus (Hons) (TAR UC)",
+        "email": "tanst@tarc.edu.my",
+        "image": "img/staff/TanST.jpg"
     },
     {
-        "name": "Dr Wong Thein Lai",
+        "name": "Encik Afieq Zamirul Bin Zarimi",
         "department": "Faculty of Computing And Information Technology",
-        "designation": "Deputy Dean (Research & Development)",
-        "position": "Assistant Professor",
-        "education": "BAppSc (Hons) (USM), MInfScTech, PhD (Osaka)",
-        "email": "wongtl@tarc.edu.my",
-        "major": "Information Security",
-        "interest": "Blockchain, Networking, Data Sharing Framework for IR4.0",
-        "image": "img/WongTL.jpg"
+        "designation": "Laboratory Officer",
+        "education": "BCompSc (Hons) (UPNM)",
+        "email": "afieqzamirul@tarc.edu.my",
+        "image": "img/staff/Afieq.jpg"
     },
     {
-        "name": "Dr Wong Thein Lai",
+        "name": "Encik Mohd Abrar Bin Hafidz",
         "department": "Faculty of Computing And Information Technology",
-        "designation": "Deputy Dean (Research & Development)",
-        "position": "Assistant Professor",
-        "education": "BAppSc (Hons) (USM), MInfScTech, PhD (Osaka)",
-        "email": "wongtl@tarc.edu.my",
-        "major": "Information Security",
-        "interest": "Blockchain, Networking, Data Sharing Framework for IR4.0",
-        "image": "img/WongTL.jpg"
+        "designation": "Laboratory Officer",
+        "education": "BEngTech (Hons) (UNIKL)",
+        "email": "mohdabrar@tarc.edu.my",
+        "image": "img/staff/Abrar.jpg"
+    },
+    {
+        "name": "Puan Azurawati Binti Ismail",
+        "department": "Department of Software Engineering And Technology",
+        "designation": "Associate Dean",
+        "position": "Senior Lecturer",
+        "education": "BSc (Hons) (Leeds Met), MSc (UTM)",
+        "email": "azurawatii@tarc.edu.my",
+        "major": "Software Engineering",
+        "interest": "Software Engineering, Programming",
+        "image": "img/staff/Azurawati.jpg"
+    },
+    {
+        "name": "Puan Chin Chai Lim",
+        "department": "Department of Software Engineering And Technology",
+        "designation": "Programme Leader",
+        "position": "Senior Lecturer",
+        "education": "AdvDipSc (TARC), BS (Campbell), MSc (Sund)",
+        "email": "clchin@tarc.edu.my",
+        "major": "Object-Oriented Analysis and Design, System Administration",
+        "interest": "System Analysis and Design, System Administration",
+        "image": "img/staff/ChinCL.jpg"
+    },
+    {
+        "name": "Cik Mazlinda Binti Nezam Mudeen",
+        "department": "Department of Software Engineering And Technology",
+        "designation": "Programme Leader",
+        "position": "Lecturer",
+        "education": "DipIT, BIT (Hons) (KLIUC), MSoftEng (UTM)",
+        "email": "mazlindanm@tarc.edu.my",
+        "major": "Software Engineering",
+        "interest": "Software Testing, Automation Testing (Artificial Intelligence, Robotic Process Automation)",
+        "image": "img/staff/Mazlinda.jpg"
+    },
+    {
+        "name": "Puan Pong Suk Fun",
+        "department": "Department of Software Engineering And Technology",
+        "designation": "Programme Leader",
+        "position": "Senior Lecturer",
+        "education": "AdvDipSc (TARC), BS (Campbell), MInfComnTechMgt (AeU)",
+        "email": "pongsf@tarc.edu.my",
+        "major": "Information and Communication Technology Management",
+        "interest": "Google Web Academy, Managing Information Systems, Analysis and Design of IS, Enterprise Resource Planning",
+        "image": "img/staff/PongSF.jpg"
+    },
+    {
+        "name": "Puan Lee Seah Fang",
+        "department": "Department of Software Engineering And Technology",
+        "designation": "Senior Lecturer",
+        "education": "AdvDipSc (TARC), BS (Campbell), MSc (UTM)",
+        "email": "leeseahfang@tarc.edu.my",
+        "major": "Information Technology Management",
+        "interest": "Information System, .NET programming",
+        "image": "img/staff/LeeSF.jpg"
+    },
+    {
+        "name": "Ts. Mohd Ridzuan Bin Ahmad",
+        "department": "Department of Software Engineering And Technology",
+        "designation": "Senior Lecturer",
+        "education": "BSc (Hons), MSc (UTM), P.Tech.",
+        "email": "mohdridzuana@tarc.edu.my",
+        "image": "img/staff/Ridzuan.jpg"
+    },
+    {
+        "name": "Encik Shoong Wai Kin",
+        "department": "Department of Software Engineering And Technology",
+        "designation": "Senior Lecturer",
+        "education": "DipSc (TARC), BS (Campbell), MInfComnTechMgt (AeU)",
+        "email": "shoongwk@tarc.edu.my",
+        "major": "Project Management",
+        "interest": "Project Management, Programming Concepts & Design, E-Commerce",
+        "image": "img/staff/botak.jpg"
+    },
+    {
+        "name": "Puan Anurehka A/P Magheswaran",
+        "department": "Department of Software Engineering And Technology",
+        "designation": "Lecturer",
+        "education": "BCompSc (Hons), MSoftEng (Mal)",
+        "email": "anurehkam@tarc.edu.my",
+        "major": "Software Engineering",
+        "interest": "E-Learning, Software Engineering, Text and Sentiment Analysis",
+        "image": "img/staff/anu.jpg"
+    },
+    {
+        "name": "Ts. Bavani A/P Raja Pandian",
+        "department": "Department of Software Engineering And Technology",
+        "designation": "Lecturer",
+        "education": "BCompSc (Hons), MCompSc (UNISEL), P.Tech.",
+        "email": "bavanirp@tarc.edu.my",
+        "major": "Software Engineering",
+        "interest": "Data Science, Web Development, Software Development & Testing",
+        "image": "img/staff/bavani.jpg"
+    },
+    {
+        "name": "Encik Chang Hoong Jack",
+        "department": "Department of Software Engineering And Technology",
+        "designation": "Lecturer",
+        "education": "BCompSc (Hons) (TAR UC), Master candidate",
+        "email": "changhj@tarc.edu.my",
+        "major": "Software Engineering",
+        "interest": "Microservices, Internet Technology, Java Spring, Web App Development",
+        "image": "img/staff/chang.jpg"
+    },
+    {
+        "name": "Ts. Lim Fung Ji",
+        "department": "Department of Software Engineering And Technology",
+        "designation": "Lecturer",
+        "education": "HDipCompS (Informatics), BIT (S.Qld), MSoftEng (UTM), P.Tech., PhD candidate",
+        "email": "limfj@tarc.edu.my",
+        "major": "Software Engineering",
+        "interest": "Software Testing, Software Quality Assurance, Robotic Process Automation",
+        "image": "img/staff/brother.jpg"
+    },
+    {
+        "name": "Encik Chee Keh Niang",
+        "department": "Department of Mathematical And Data Science",
+        "designation": "Associate Dean",
+        "position": "Principal Lecturer",
+        "education": "BSc (Hons), MSc (UPM)",
+        "email": "cheekn@tarc.edu.my",
+        "major": "Applied Statistics",
+        "interest": "Applied Statistics",
+        "image": "img/staff/chee.jpg"
+    },
+    {
+        "name": "Encik Heng Jooi Huang",
+        "department": "Department of Mathematical And Data Science",
+        "designation": "Lecturer",
+        "education": "AdvDipSc (TARC), BS (Campbell), MSc (UTM)",
+        "email": "hengjh@tarc.edu.my",
+        "major": "IT Management",
+        "interest": "Database, Java Programming, Mobile App",
+        "image": "img/staff/heng.jpg"
+    },
+    {
+        "name": "Encik Mohd Nur Rahmat Bin Mohd Taat",
+        "department": "Department of Information Systems And Security",
+        "designation": "Lecturer",
+        "education": "BCompSc (Hons) (UMS), MSc (Sund.)",
+        "email": "mohdnurrahmat@tarc.edu.my",
+        "major": "Computer Science",
+        "interest": "Cybersecurity, Networking, Human Computer Interaction",
+        "image": "img/staff/malware.jpg"
+    },
+    {
+        "name": "Dr See Kwee Teck",
+        "department": "Department of Information Systems And Security",
+        "designation": "Assistant Professor",
+        "education": "AdvDipSc (TARC), BS (Campbell), MSc (Liv.J.Moores), PhD (MMU)",
+        "email": "seekt@tarc.edu.my",
+        "major": "Business information systems, multimedia systems, mobile assisted learning",
+        "interest": "Mobile Application Development, Interactive Multimedia Application, and Mobile Assisted Language Learning.",
+        "image": "img/staff/see.jpg"
+    },
+    {
+        "name": "Puan Tan Li Peng",
+        "department": "Department of Information And Communication Technology",
+        "designation": "Associate Dean",
+        "position": "Senior Lecturer",
+        "education": "AdvDipSc (TARC), BS (Campbell), MSc (Brad)",
+        "email": "tanlp@tarc.edu.my",
+        "major": "Mobile Computing",
+        "interest": "Information Systems, Mobile Application Development, Human Computer Interaction",
+        "image": "img/staff/javaMASTER.jpg"
+    },
+    {
+        "name": "Assoc. Prof. Ts. Dr Tew Yiqi",
+        "department": "Department of Information And Communication Technology",
+        "designation": "Programme Leader",
+        "position": "Associate Professor",
+        "education": "BEng (Hons) (MMU), MInfTech (UKM), PhD (Mal), P.Tech., SMIEEE, AFAAET",
+        "email": "yiqi@tarc.edu.my",
+        "major": "Computer Engineering, Signal Processing, Video Coding",
+        "interest": "Image / Video (H.264, HEVC) Processing, Embedded System (Internet of Things), Security (Information Hiding)",
+        "image": "img/staff/yiqi.jpg"
+    },
+    {
+        "name": "Cik Joan Hau",
+        "department": "Department of Information And Communication Technology",
+        "designation": "Lecturer",
+        "education": "BCompSc (Hons) (TAR UC), Master candidate",
+        "email": "joanhau@tarc.edu.my",
+        "major": "Software Engineering, Video Coding",
+        "interest": "Image/Video Processing (H.266, VVC)",
+        "image": "img/staff/joan.jpg"
+    },
+    {
+        "name": "Encik Low Choon Keat",
+        "department": "Department of Information And Communication Technology",
+        "designation": "Lecturer",
+        "education": "BCompSc (Hons), MCompSc (Mal), PhD candidate",
+        "email": "lowck@tarc.edu.my",
+        "major": "Networking",
+        "interest": "Cloud Computing, Fog Computing and IOT",
+        "image": "img/staff/FasterIwantGoHome.jpg"
+    },
+    {
+        "name": "Puan Chai Foong Theng",
+        "department": "Department of Computer Science And Embedded Systems",
+        "designation": "Senior Lecturer",
+        "education": "BCompSc (Hons), MSc (USM)",
+        "email": "chaift@tarc.edu.my",
+        "major": "Artificial Intelligent, Natural Language Processing, Image Processing, Graphics Programming, Data Visualization, Software Engineering,",
+        "interest": "Game, Digital Multimedia, Virtual Reality, Interactive Software, AI, Image Processing, Natural Language Processing",
+        "image": "img/staff/YourMs.jpg"
+    },
+    {
+        "name": "Puan Yeoh Kar Peng",
+        "department": "Department of Computer Science And Embedded Systems",
+        "designation": "Lecturer",
+        "education": "AdvDipSc (TARC), BS (Campbell), MSc (UPM)",
+        "email": "yeohkp@tarc.edu.my",
+        "major": "Information System",
+        "interest": "Management Information System, E-Commerce.",
+        "image": "img/staff/Yeoh.jpg"
+    },
+    {
+        "name": "Dr Goh Ching Pang",
+        "department": "Department of Computer Science And Embedded Systems",
+        "designation": "Assistant Professor",
+        "education": "BEng (Hons), PhD (USM)",
+        "email": "gohcp@tarc.edu.my",
+        "major": "Computer Vision, Image Processing",
+        "interest": "Computer Vision, Image Processing, Artificial Intelligence",
+        "image": "img/staff/GohCP.jpg"
     }
 ]
