@@ -1,17 +1,17 @@
 [
     {
-        "name": "Ts. Tan Yong Yue",
+        "name": "Ts. Tan Choo Kim",
         "department": "Faculty of Computing And Information Technology",
         "designation": "Dean",
         "position": "Senior Lecturer",
         "education": "DipIT (PTPL), BSc (Hons) (Staffs), ExecDipMgt, MCompSc (Mal), P.Tech",
-        "email": "limsh@tarc.edu.my",
+        "email": "tanck@tarc.edu.my",
         "major": "Management Information Systems",
         "interest": "Information Security, Networking",
-        "image": "img/staff/LimSH.jpg"
+        "image": "img/staff/TCK.jpg"
     },
     {
-        "name": "Dr Theng Chia Chia",
+        "name": "Dr Theng Wei Hao",
         "department": "Faculty of Computing And Information Technology",
         "designation": "Deputy Dean (Research & Development)",
         "position": "Assistant Professor",
@@ -19,10 +19,10 @@
         "email": "wongtl@tarc.edu.my",
         "major": "Information Security",
         "interest": "Blockchain, Networking, Data Sharing Framework for IR4.0",
-        "image": "img/staff/WongTL.jpg"
+        "image": "img/staff/TWH.jpg"
     },
     {
-        "name": "Ts. Lim Jia Sheng",
+        "name": "Ts. Lim Chooi Kean",
         "department": "Faculty of Computing And Information Technology",
         "designation": "Deputy Dean (Academic)",
         "position": "Principal Lecturer",
@@ -30,10 +30,10 @@
         "email": "choklm@tarc.edu.my",
         "major": "Networking",
         "interest": "Networking, Network Security",
-        "image": "img/staff/ChokLM.jpg"
+        "image": "img/staff/LCK.jpg"
     },
     {
-        "name": "Encik Lim Khai Jun",
+        "name": "Encik Lim Khai Lie",
         "department": "Faculty of Computing And Information Technology",
         "designation": "Deputy Dean (Academic)",
         "position": "Senior Lecturer",
@@ -41,10 +41,10 @@
         "email": "cpooi@tarc.edu.my",
         "major": "Information and Communication Technology Management",
         "interest": "Systems Analysis and Design, Management Information Systems, Enterprise Resource Planning",
-        "image": "img/staff/OoiCP.jpg"
+        "image": "img/staff/LKL.jpg"
     },
     {
-        "name": "Puan Voon Hin Yong",
+        "name": "Encik Wu Yi Fan",
         "department": "Faculty of Computing And Information Technology",
         "designation": "Associate Dean For Quality Assurance",
         "position": "Senior Lecturer",
@@ -52,7 +52,7 @@
         "email": "choylf@tarc.edu.my",
         "major": "ICT management, e-commerce, Computer systems architecture",
         "interest": "Big data, Web development, Mobile development",
-        "image": "img/staff/ChoyLF.jpg"
+        "image": "img/staff/WYF.jpg"
     },
     {
         "name": "Puan Chong Siew Fong",
@@ -60,7 +60,7 @@
         "designation": "Manager",
         "education": "AdvDipComm (TARC)",
         "email": "wongml@tarc.edu.my",
-        "image": "img/staff/WongML.jpg"
+        "image": "img/staff/CSF.jpg"
     },
     {
         "name": "Puan Chong Xin Yi",
@@ -68,7 +68,7 @@
         "designation": "Senior Assistant Registrar",
         "education": "BBA (Hons) (UTAR), CEMBA (WOU)",
         "email": "choongsl@tarc.edu.my",
-        "image": "img/staff/ChoongSL.jpg"
+        "image": "img/staff/CXY.jpg"
     },
     {
         "name": "Cik Chong Yee Mun",
@@ -76,7 +76,7 @@
         "designation": "Assistant Registrar",
         "education": "DipBS (TARC), BA (Hons) (Greenwich)",
         "email": "chanpm@tarc.edu.my",
-        "image": "img/staff/ChanPM.jpg"
+        "image": "img/staff/CYM.jpg"
     },
     {
         "name": "Encik Cheah Hock Chye",
@@ -84,7 +84,7 @@
         "designation": "Assistant Registrar",
         "education": "BMgt (Hons) (OUM)",
         "email": "cheahhc@tarc.edu.my",
-        "image": "img/staff/Ian.jpg"
+        "image": "img/staff/CHC.jpg"
     },
     {
         "name": "Puan Nurul Nadiah Binti Mohd Yusof",
@@ -100,7 +100,7 @@
         "designation": "Assistant Registrar",
         "education": "DipBS, BBus (Hons) (TAR UC)",
         "email": "tanst@tarc.edu.my",
-        "image": "img/staff/TanST.jpg"
+        "image": "img/staff/TST.jpg"
     },
     {
         "name": "Encik Mohd Firdaus Bin Mohd Fauzi",
@@ -108,7 +108,7 @@
         "designation": "Laboratory Officer",
         "education": "BCompSc (Hons) (UPNM)",
         "email": "afieqzamirul@tarc.edu.my",
-        "image": "img/staff/Afieq.jpg"
+        "image": "img/staff/Firdaus.jpg"
     },
     {
         "name": "Encik Mohd Abrar Bin Mohd Yusof",
@@ -124,10 +124,10 @@
         "designation": "Associate Dean",
         "position": "Senior Lecturer",
         "education": "BSc (Hons) (Leeds Met), MSc (UTM)",
-        "email": "azurawatii@tarc.edu.my",
+        "email": "hidayah@tarc.edu.my",
         "major": "Software Engineering",
         "interest": "Software Engineering, Programming",
-        "image": "img/staff/Azurawati.jpg"
+        "image": "img/staff/Hidayah.jpg"
     },
     {
         "name": "Puan Chong Lee Lee",
@@ -138,7 +138,7 @@
         "email": "clchin@tarc.edu.my",
         "major": "Object-Oriented Analysis and Design, System Administration",
         "interest": "System Analysis and Design, System Administration",
-        "image": "img/staff/ChinCL.jpg"
+        "image": "img/staff/CLL.jpg"
     },
     {
         "name": "Cik Chong Siew Ling",
@@ -146,10 +146,10 @@
         "designation": "Programme Leader",
         "position": "Lecturer",
         "education": "DipIT, BIT (Hons) (KLIUC), MSoftEng (UTM)",
-        "email": "mazlindanm@tarc.edu.my",
+        "email": "chongsl@tarc.edu.my",
         "major": "Software Engineering",
         "interest": "Software Testing, Automation Testing (Artificial Intelligence, Robotic Process Automation)",
-        "image": "img/staff/Mazlinda.jpg"
+        "image": "img/staff/CSL.jpg"
     },
     {
         "name": "Puan Pong Suk Dien",
@@ -157,58 +157,58 @@
         "designation": "Programme Leader",
         "position": "Senior Lecturer",
         "education": "AdvDipSc (TARC), BS (Campbell), MInfComnTechMgt (AeU)",
-        "email": "pongsf@tarc.edu.my",
+        "email": "pongsd@tarc.edu.my",
         "major": "Information and Communication Technology Management",
         "interest": "Google Web Academy, Managing Information Systems, Analysis and Design of IS, Enterprise Resource Planning",
-        "image": "img/staff/PongSF.jpg"
+        "image": "img/staff/PSD.jpg"
     },
     {
         "name": "Puan Lee See Lian",
         "department": "Department of Software Engineering And Technology",
         "designation": "Senior Lecturer",
         "education": "AdvDipSc (TARC), BS (Campbell), MSc (UTM)",
-        "email": "leeseahfang@tarc.edu.my",
+        "email": "leesl@tarc.edu.my",
         "major": "Information Technology Management",
         "interest": "Information System, .NET programming",
-        "image": "img/staff/LeeSF.jpg"
+        "image": "img/staff/LSL.jpg"
     },
     {
         "name": "Ts. Dr Lim Chooi Hong",
         "department": "Department of Software Engineering And Technology",
         "designation": "Senior Lecturer",
         "education": "BSc (Hons), MSc (UTM), P.Tech.",
-        "email": "mohdridzuana@tarc.edu.my",
-        "image": "img/staff/Ridzuan.jpg"
+        "email": "limch@tarc.edu.my",
+        "image": "img/staff/LCH.jpg"
     },
     {
         "name": "Encik Lim Chun Keat",
         "department": "Department of Software Engineering And Technology",
         "designation": "Senior Lecturer",
         "education": "DipSc (TARC), BS (Campbell), MInfComnTechMgt (AeU)",
-        "email": "shoongwk@tarc.edu.my",
+        "email": "limck@tarc.edu.my",
         "major": "Project Management",
         "interest": "Project Management, Programming Concepts & Design, E-Commerce",
-        "image": "img/staff/botak.jpg"
+        "image": "img/staff/chunkeat.jpg"
     },
     {
         "name": "Puan Lim Siew Hoon",
         "department": "Department of Software Engineering And Technology",
         "designation": "Lecturer",
         "education": "BCompSc (Hons), MSoftEng (Mal)",
-        "email": "anurehkam@tarc.edu.my",
+        "email": "limsh@tarc.edu.my",
         "major": "Software Engineering",
         "interest": "E-Learning, Software Engineering, Text and Sentiment Analysis",
-        "image": "img/staff/anu.jpg"
+        "image": "img/staff/LSH.jpg"
     },
     {
         "name": "Ts. Dr Lim Yee Mei",
         "department": "Department of Software Engineering And Technology",
         "designation": "Lecturer",
         "education": "BCompSc (Hons), MCompSc (UNISEL), P.Tech.",
-        "email": "bavanirp@tarc.edu.my",
+        "email": "limym@tarc.edu.my",
         "major": "Software Engineering",
         "interest": "Data Science, Web Development, Software Development & Testing",
-        "image": "img/staff/bavani.jpg"
+        "image": "img/staff/LYM.jpg"
     },
     {
         "name": "Encik Chang Hui Jie",
@@ -218,17 +218,17 @@
         "email": "changhj@tarc.edu.my",
         "major": "Software Engineering",
         "interest": "Microservices, Internet Technology, Java Spring, Web App Development",
-        "image": "img/staff/chang.jpg"
+        "image": "img/staff/CHJ.jpg"
     },
     {
-        "name": "Ts. Dr Lim Fung Jie",
+        "name": "Ts. Dr Lim Ko Pi",
         "department": "Department of Software Engineering And Technology",
         "designation": "Lecturer",
         "education": "HDipCompS (Informatics), BIT (S.Qld), MSoftEng (UTM), P.Tech., PhD candidate",
-        "email": "limfj@tarc.edu.my",
+        "email": "limkp@tarc.edu.my",
         "major": "Software Engineering",
         "interest": "Software Testing, Software Quality Assurance, Robotic Process Automation",
-        "image": "img/staff/brother.jpg"
+        "image": "img/staff/LKP.jpg"
     },
     {
         "name": "Encik Lim Jia Wei",
@@ -236,40 +236,40 @@
         "designation": "Associate Dean",
         "position": "Principal Lecturer",
         "education": "BSc (Hons), MSc (UPM)",
-        "email": "cheekn@tarc.edu.my",
+        "email": "limjw@tarc.edu.my",
         "major": "Applied Statistics",
         "interest": "Applied Statistics",
-        "image": "img/staff/chee.jpg"
+        "image": "img/staff/LJW.jpg"
     },
     {
         "name": "Encik Chong Chee Keong",
         "department": "Department of Mathematical And Data Science",
         "designation": "Lecturer",
         "education": "AdvDipSc (TARC), BS (Campbell), MSc (UTM)",
-        "email": "hengjh@tarc.edu.my",
+        "email": "chongck@tarc.edu.my",
         "major": "IT Management",
         "interest": "Database, Java Programming, Mobile App",
-        "image": "img/staff/heng.jpg"
+        "image": "img/staff/CCK.jpg"
     },
     {
         "name": "Encik Tam Wai Keong",
         "department": "Department of Information Systems And Security",
         "designation": "Lecturer",
         "education": "BCompSc (Hons) (UMS), MSc (Sund.)",
-        "email": "mohdnurrahmat@tarc.edu.my",
+        "email": "tamwk@tarc.edu.my",
         "major": "Computer Science",
         "interest": "Cybersecurity, Networking, Human Computer Interaction",
-        "image": "img/staff/malware.jpg"
+        "image": "img/staff/TWK.jpg"
     },
     {
         "name": "Dr Ng Choon Han",
         "department": "Department of Information Systems And Security",
         "designation": "Assistant Professor",
         "education": "AdvDipSc (TARC), BS (Campbell), MSc (Liv.J.Moores), PhD (MMU)",
-        "email": "seekt@tarc.edu.my",
+        "email": "ngch@tarc.edu.my",
         "major": "Business information systems, multimedia systems, mobile assisted learning",
         "interest": "Mobile Application Development, Interactive Multimedia Application, and Mobile Assisted Language Learning.",
-        "image": "img/staff/see.jpg"
+        "image": "img/staff/NCH.jpg"
     },
     {
         "name": "Puan Ng Hui Wen",
@@ -277,10 +277,10 @@
         "designation": "Associate Dean",
         "position": "Senior Lecturer",
         "education": "AdvDipSc (TARC), BS (Campbell), MSc (Brad)",
-        "email": "tanlp@tarc.edu.my",
+        "email": "nghw@tarc.edu.my",
         "major": "Mobile Computing",
         "interest": "Information Systems, Mobile Application Development, Human Computer Interaction",
-        "image": "img/staff/javaMASTER.jpg"
+        "image": "img/staff/NHW.jpg"
     },
     {
         "name": "Assoc. Prof. Ts. Dr Yap Yee Jiun",
@@ -288,40 +288,40 @@
         "designation": "Programme Leader",
         "position": "Associate Professor",
         "education": "BEng (Hons) (MMU), MInfTech (UKM), PhD (Mal), P.Tech., SMIEEE, AFAAET",
-        "email": "yiqi@tarc.edu.my",
+        "email": "yeejiun@tarc.edu.my",
         "major": "Computer Engineering, Signal Processing, Video Coding",
         "interest": "Image / Video (H.264, HEVC) Processing, Embedded System (Internet of Things), Security (Information Hiding)",
-        "image": "img/staff/yiqi.jpg"
+        "image": "img/staff/YYJ.jpg"
     },
     {
         "name": "Cik Wendy Wong",
         "department": "Department of Information And Communication Technology",
         "designation": "Lecturer",
         "education": "BCompSc (Hons) (TAR UC), Master candidate",
-        "email": "joanhau@tarc.edu.my",
+        "email": "wendywong@tarc.edu.my",
         "major": "Software Engineering, Video Coding",
         "interest": "Image/Video Processing (H.266, VVC)",
-        "image": "img/staff/joan.jpg"
+        "image": "img/staff/wendy.jpg"
     },
     {
         "name": "Encik Ooi Yu Xiang",
         "department": "Department of Information And Communication Technology",
         "designation": "Lecturer",
         "education": "BCompSc (Hons), MCompSc (Mal), PhD candidate",
-        "email": "lowck@tarc.edu.my",
+        "email": "ooiyx@tarc.edu.my",
         "major": "Networking",
         "interest": "Cloud Computing, Fog Computing and IOT",
-        "image": "img/staff/FasterIwantGoHome.jpg"
+        "image": "img/staff/OYX.jpg"
     },
     {
         "name": "Puan Ong Siew Chin",
         "department": "Department of Computer Science And Embedded Systems",
         "designation": "Senior Lecturer",
         "education": "BCompSc (Hons), MSc (USM)",
-        "email": "chaift@tarc.edu.my",
+        "email": "ongsc@tarc.edu.my",
         "major": "Artificial Intelligent, Natural Language Processing, Image Processing, Graphics Programming, Data Visualization, Software Engineering,",
         "interest": "Game, Digital Multimedia, Virtual Reality, Interactive Software, AI, Image Processing, Natural Language Processing",
-        "image": "img/staff/YourMs.jpg"
+        "image": "img/staff/OSC.jpg"
     },
     {
         "name": "Puan Yeoh Kim Poh",
@@ -331,7 +331,7 @@
         "email": "yeohkp@tarc.edu.my",
         "major": "Information System",
         "interest": "Management Information System, E-Commerce.",
-        "image": "img/staff/Yeoh.jpg"
+        "image": "img/staff/YKP.jpg"
     },
     {
         "name": "Dr Goh Chooi Peng",
@@ -341,6 +341,6 @@
         "email": "gohcp@tarc.edu.my",
         "major": "Computer Vision, Image Processing",
         "interest": "Computer Vision, Image Processing, Artificial Intelligence",
-        "image": "img/staff/GohCP.jpg"
+        "image": "img/staff/GCP.jpg"
     }
 ]
