@@ -619,7 +619,9 @@ function success() {
 
 // Apply program
 function apply() {
-    //TODO
+    const programApprove = document.getElementById("qualification-program").textContent;
+    const studyLevel = currentSelect1.value;
+    window.location.href = `application.html?program=${programApprove}&studyLevel=${studyLevel}`;
 }
 
 // Unqualified
