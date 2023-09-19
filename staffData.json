@@ -1,6 +1,6 @@
 [
     {
-        "name": "Ts. Lim Shen Huoy",
+        "name": "Ts. Tan Yong Yue",
         "department": "Faculty of Computing And Information Technology",
         "designation": "Dean",
         "position": "Senior Lecturer",
@@ -11,7 +11,7 @@
         "image": "img/staff/LimSH.jpg"
     },
     {
-        "name": "Dr Wong Thein Lai",
+        "name": "Dr Theng Chia Chia",
         "department": "Faculty of Computing And Information Technology",
         "designation": "Deputy Dean (Research & Development)",
         "position": "Assistant Professor",
@@ -22,7 +22,7 @@
         "image": "img/staff/WongTL.jpg"
     },
     {
-        "name": "Ts. Chok Len Mooi",
+        "name": "Ts. Lim Jia Sheng",
         "department": "Faculty of Computing And Information Technology",
         "designation": "Deputy Dean (Academic)",
         "position": "Principal Lecturer",
@@ -33,7 +33,7 @@
         "image": "img/staff/ChokLM.jpg"
     },
     {
-        "name": "Encik Ooi Chun Pew",
+        "name": "Encik Lim Khai Jun",
         "department": "Faculty of Computing And Information Technology",
         "designation": "Deputy Dean (Academic)",
         "position": "Senior Lecturer",
@@ -44,7 +44,7 @@
         "image": "img/staff/OoiCP.jpg"
     },
     {
-        "name": "Puan Choy Lai Fun",
+        "name": "Puan Voon Hin Yong",
         "department": "Faculty of Computing And Information Technology",
         "designation": "Associate Dean For Quality Assurance",
         "position": "Senior Lecturer",
@@ -55,7 +55,7 @@
         "image": "img/staff/ChoyLF.jpg"
     },
     {
-        "name": "Puan Wong Mung Lan",
+        "name": "Puan Chong Siew Fong",
         "department": "Faculty of Computing And Information Technology",
         "designation": "Manager",
         "education": "AdvDipComm (TARC)",
@@ -63,7 +63,7 @@
         "image": "img/staff/WongML.jpg"
     },
     {
-        "name": "Puan Choong Siew Ling",
+        "name": "Puan Chong Xin Yi",
         "department": "Faculty of Computing And Information Technology",
         "designation": "Senior Assistant Registrar",
         "education": "BBA (Hons) (UTAR), CEMBA (WOU)",
@@ -71,7 +71,7 @@
         "image": "img/staff/ChoongSL.jpg"
     },
     {
-        "name": "Cik Chan Pui Mun",
+        "name": "Cik Chong Yee Mun",
         "department": "Faculty of Computing And Information Technology",
         "designation": "Assistant Registrar",
         "education": "DipBS (TARC), BA (Hons) (Greenwich)",
@@ -79,7 +79,7 @@
         "image": "img/staff/ChanPM.jpg"
     },
     {
-        "name": "Encik Ian Cheah Hock Choon",
+        "name": "Encik Cheah Hock Chye",
         "department": "Faculty of Computing And Information Technology",
         "designation": "Assistant Registrar",
         "education": "BMgt (Hons) (OUM)",
@@ -87,7 +87,7 @@
         "image": "img/staff/Ian.jpg"
     },
     {
-        "name": "Puan Nurul Nadiah Binti Mohamad Azni",
+        "name": "Puan Nurul Nadiah Binti Mohd Yusof",
         "department": "Faculty of Computing And Information Technology",
         "designation": "Assistant Registrar",
         "education": "BAppSc (Hons) (USM)",
@@ -95,7 +95,7 @@
         "image": "img/staff/Nurul.jpg"
     },
     {
-        "name": "Cik Tan See Theng",
+        "name": "Cik Tan Siew Teng",
         "department": "Faculty of Computing And Information Technology",
         "designation": "Assistant Registrar",
         "education": "DipBS, BBus (Hons) (TAR UC)",
@@ -103,7 +103,7 @@
         "image": "img/staff/TanST.jpg"
     },
     {
-        "name": "Encik Afieq Zamirul Bin Zarimi",
+        "name": "Encik Mohd Firdaus Bin Mohd Fauzi",
         "department": "Faculty of Computing And Information Technology",
         "designation": "Laboratory Officer",
         "education": "BCompSc (Hons) (UPNM)",
@@ -111,7 +111,7 @@
         "image": "img/staff/Afieq.jpg"
     },
     {
-        "name": "Encik Mohd Abrar Bin Hafidz",
+        "name": "Encik Mohd Abrar Bin Mohd Yusof",
         "department": "Faculty of Computing And Information Technology",
         "designation": "Laboratory Officer",
         "education": "BEngTech (Hons) (UNIKL)",
@@ -119,7 +119,7 @@
         "image": "img/staff/Abrar.jpg"
     },
     {
-        "name": "Puan Azurawati Binti Ismail",
+        "name": "Puan Nurul Hidayah Binti Mohd Yusof",
         "department": "Department of Software Engineering And Technology",
         "designation": "Associate Dean",
         "position": "Senior Lecturer",
@@ -130,7 +130,7 @@
         "image": "img/staff/Azurawati.jpg"
     },
     {
-        "name": "Puan Chin Chai Lim",
+        "name": "Puan Chong Lee Lee",
         "department": "Department of Software Engineering And Technology",
         "designation": "Programme Leader",
         "position": "Senior Lecturer",
@@ -141,7 +141,7 @@
         "image": "img/staff/ChinCL.jpg"
     },
     {
-        "name": "Cik Mazlinda Binti Nezam Mudeen",
+        "name": "Cik Chong Siew Ling",
         "department": "Department of Software Engineering And Technology",
         "designation": "Programme Leader",
         "position": "Lecturer",
@@ -152,7 +152,7 @@
         "image": "img/staff/Mazlinda.jpg"
     },
     {
-        "name": "Puan Pong Suk Fun",
+        "name": "Puan Pong Suk Dien",
         "department": "Department of Software Engineering And Technology",
         "designation": "Programme Leader",
         "position": "Senior Lecturer",
@@ -163,7 +163,7 @@
         "image": "img/staff/PongSF.jpg"
     },
     {
-        "name": "Puan Lee Seah Fang",
+        "name": "Puan Lee See Lian",
         "department": "Department of Software Engineering And Technology",
         "designation": "Senior Lecturer",
         "education": "AdvDipSc (TARC), BS (Campbell), MSc (UTM)",
@@ -173,7 +173,7 @@
         "image": "img/staff/LeeSF.jpg"
     },
     {
-        "name": "Ts. Mohd Ridzuan Bin Ahmad",
+        "name": "Ts. Dr Lim Chooi Hong",
         "department": "Department of Software Engineering And Technology",
         "designation": "Senior Lecturer",
         "education": "BSc (Hons), MSc (UTM), P.Tech.",
@@ -181,7 +181,7 @@
         "image": "img/staff/Ridzuan.jpg"
     },
     {
-        "name": "Encik Shoong Wai Kin",
+        "name": "Encik Lim Chun Keat",
         "department": "Department of Software Engineering And Technology",
         "designation": "Senior Lecturer",
         "education": "DipSc (TARC), BS (Campbell), MInfComnTechMgt (AeU)",
@@ -191,7 +191,7 @@
         "image": "img/staff/botak.jpg"
     },
     {
-        "name": "Puan Anurehka A/P Magheswaran",
+        "name": "Puan Lim Siew Hoon",
         "department": "Department of Software Engineering And Technology",
         "designation": "Lecturer",
         "education": "BCompSc (Hons), MSoftEng (Mal)",
@@ -201,7 +201,7 @@
         "image": "img/staff/anu.jpg"
     },
     {
-        "name": "Ts. Bavani A/P Raja Pandian",
+        "name": "Ts. Dr Lim Yee Mei",
         "department": "Department of Software Engineering And Technology",
         "designation": "Lecturer",
         "education": "BCompSc (Hons), MCompSc (UNISEL), P.Tech.",
@@ -211,7 +211,7 @@
         "image": "img/staff/bavani.jpg"
     },
     {
-        "name": "Encik Chang Hoong Jack",
+        "name": "Encik Chang Hui Jie",
         "department": "Department of Software Engineering And Technology",
         "designation": "Lecturer",
         "education": "BCompSc (Hons) (TAR UC), Master candidate",
@@ -221,7 +221,7 @@
         "image": "img/staff/chang.jpg"
     },
     {
-        "name": "Ts. Lim Fung Ji",
+        "name": "Ts. Dr Lim Fung Jie",
         "department": "Department of Software Engineering And Technology",
         "designation": "Lecturer",
         "education": "HDipCompS (Informatics), BIT (S.Qld), MSoftEng (UTM), P.Tech., PhD candidate",
@@ -231,7 +231,7 @@
         "image": "img/staff/brother.jpg"
     },
     {
-        "name": "Encik Chee Keh Niang",
+        "name": "Encik Lim Jia Wei",
         "department": "Department of Mathematical And Data Science",
         "designation": "Associate Dean",
         "position": "Principal Lecturer",
@@ -242,7 +242,7 @@
         "image": "img/staff/chee.jpg"
     },
     {
-        "name": "Encik Heng Jooi Huang",
+        "name": "Encik Chong Chee Keong",
         "department": "Department of Mathematical And Data Science",
         "designation": "Lecturer",
         "education": "AdvDipSc (TARC), BS (Campbell), MSc (UTM)",
@@ -252,7 +252,7 @@
         "image": "img/staff/heng.jpg"
     },
     {
-        "name": "Encik Mohd Nur Rahmat Bin Mohd Taat",
+        "name": "Encik Tam Wai Keong",
         "department": "Department of Information Systems And Security",
         "designation": "Lecturer",
         "education": "BCompSc (Hons) (UMS), MSc (Sund.)",
@@ -262,7 +262,7 @@
         "image": "img/staff/malware.jpg"
     },
     {
-        "name": "Dr See Kwee Teck",
+        "name": "Dr Ng Choon Han",
         "department": "Department of Information Systems And Security",
         "designation": "Assistant Professor",
         "education": "AdvDipSc (TARC), BS (Campbell), MSc (Liv.J.Moores), PhD (MMU)",
@@ -272,7 +272,7 @@
         "image": "img/staff/see.jpg"
     },
     {
-        "name": "Puan Tan Li Peng",
+        "name": "Puan Ng Hui Wen",
         "department": "Department of Information And Communication Technology",
         "designation": "Associate Dean",
         "position": "Senior Lecturer",
@@ -283,7 +283,7 @@
         "image": "img/staff/javaMASTER.jpg"
     },
     {
-        "name": "Assoc. Prof. Ts. Dr Tew Yiqi",
+        "name": "Assoc. Prof. Ts. Dr Yap Yee Jiun",
         "department": "Department of Information And Communication Technology",
         "designation": "Programme Leader",
         "position": "Associate Professor",
@@ -294,7 +294,7 @@
         "image": "img/staff/yiqi.jpg"
     },
     {
-        "name": "Cik Joan Hau",
+        "name": "Cik Wendy Wong",
         "department": "Department of Information And Communication Technology",
         "designation": "Lecturer",
         "education": "BCompSc (Hons) (TAR UC), Master candidate",
@@ -304,7 +304,7 @@
         "image": "img/staff/joan.jpg"
     },
     {
-        "name": "Encik Low Choon Keat",
+        "name": "Encik Ooi Yu Xiang",
         "department": "Department of Information And Communication Technology",
         "designation": "Lecturer",
         "education": "BCompSc (Hons), MCompSc (Mal), PhD candidate",
@@ -314,7 +314,7 @@
         "image": "img/staff/FasterIwantGoHome.jpg"
     },
     {
-        "name": "Puan Chai Foong Theng",
+        "name": "Puan Ong Siew Chin",
         "department": "Department of Computer Science And Embedded Systems",
         "designation": "Senior Lecturer",
         "education": "BCompSc (Hons), MSc (USM)",
@@ -324,7 +324,7 @@
         "image": "img/staff/YourMs.jpg"
     },
     {
-        "name": "Puan Yeoh Kar Peng",
+        "name": "Puan Yeoh Kim Poh",
         "department": "Department of Computer Science And Embedded Systems",
         "designation": "Lecturer",
         "education": "AdvDipSc (TARC), BS (Campbell), MSc (UPM)",
@@ -334,7 +334,7 @@
         "image": "img/staff/Yeoh.jpg"
     },
     {
-        "name": "Dr Goh Ching Pang",
+        "name": "Dr Goh Chooi Peng",
         "department": "Department of Computer Science And Embedded Systems",
         "designation": "Assistant Professor",
         "education": "BEng (Hons), PhD (USM)",
