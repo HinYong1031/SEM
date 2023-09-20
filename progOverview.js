@@ -121,6 +121,20 @@ const degree = [
     },
 ];
 
+const diplomaLink = document.getElementById("pills-home-tab01");
+const degreeLink = document.getElementById("pills-profile-tab01");
+const breadcrumb = document.querySelector("#breadCrumb"); // Replace with the actual selector for your breadcrumb element
+
+// Event listener for the Diploma pill link
+diplomaLink.addEventListener("click", () => {
+    breadcrumb.innerText = "Diploma";
+});
+
+// Event listener for the Degree pill link
+degreeLink.addEventListener("click", () => {
+    breadcrumb.innerText = "Degree";
+});
+
 
 // Get references to the HTML elements
 const showAllDegreesButton = document.getElementById('showAllDegrees');
@@ -302,3 +316,13 @@ tabLinks.forEach((tabLink) => {
         showAllDegreesButton.classList.add('ring-2', 'ring-blue-200', 'bg-pink-100', 'outline-none');
     });
 });
+
+
+
+
+
+
+
+
+
+
