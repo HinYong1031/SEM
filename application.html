@@ -26,7 +26,7 @@
 <body class="bg-slate-100">
 
     <header></header>
-    
+  
     <!-- SVG Background -->
     <span class="[&>svg]:absolute [&>svg]:-z-10 [&>svg]:m-auto [&>svg]:block [&>svg]:w-full">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="680"
@@ -70,8 +70,36 @@
         </svg>
     </span>
     <!-- SVG Background -->
+
+    <div class="container mx-10">
+        <nav class="mt-10 bg-grey-light w-full rounded-md">
+          <ol class="list-reset flex">
+            <li>
+              <a
+                href="home.html"
+                class="text-white transition duration-150 ease-in-out hover:text-neutral-300 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+                >Home page</a
+              >
+            </li>
+            <li>
+                <span class="mx-2 text-white dark:text-neutral-300">></span>
+              </li>
+            <li>
+                <a
+                  href="qualifyCheck.html"
+                  class="text-white transition duration-150 ease-in-out hover:text-neutral-300 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+                  >Qualification Check</a
+                >
+              </li>
+            <li>
+              <span class="mx-2 text-white dark:text-neutral-400">></span>
+            </li>
+            <li class="text-neutral-900 dark:text-neutral-300">Enrollment Application</li>
+          </ol>
+        </nav> 
+    </div>
     
-    <div class="w-1/2 container mx-auto border my-20 rounded-xl bg-white">    
+    <div class="w-9/12 container mx-auto border my-10 rounded-xl bg-white">    
         <form class="p-10" onsubmit="return handleData()">
             <div class="space-y-8">
                 <h2 class="text-3xl font-bold text-center"><i>Online Application Form</i></h2>
