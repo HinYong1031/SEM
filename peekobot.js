@@ -94,6 +94,7 @@ const bot = function () {
     };
 
     const handleRestart = function () {
+        location.reload();
         startConversation();
     }
 
