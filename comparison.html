@@ -24,327 +24,54 @@
     <title>FOCS</title>
 </head>
 
-<body>
-    <header>
-        <div class="max-w-full mx-auto">
-            <nav class="max-w-full">
-                <div class="bg-slate-100 shadow-md">
-                    <div class="container max-w-full mx-auto flex flex-wrap items-center justify-between">
-                        <button data-collapse-toggle="mobile-menu" type="button"
-                            class="md:hidden ml-3 bg-slate-100 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center"
-                            aria-controls="mobile-menu-2" aria-expanded="false">
-                            <span class="sr-only">Open main menu</span>
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <div class="items-center hidden bg-slate-100 md:block w-full md:w-auto" id="mobile-menu">
-                            <ul
-                                class="flex-col md:flex-row flex md:space-x-8 mt-0 md:mt-0 md:text-sm md:font-medium text-blue-900">
-                                <li>
-                                    <a href="home.html" class="flex">
-                                        <img class="scale-50 h-fix max-w-xs mx-auto" src="/img/tarumt.png"
-                                            alt="Tunku Abdul Rahman University of Management and Technology">
-                                    </a>
-                                </li>
-                                <li>
-                                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                                        class="p-4 mt-6 border-b-8 border-pink-300 border-opacity-0 hover:border-opacity-100 hover:text-pink-300 duration-200 cursor-pointer focus:border-opacity-100 focus:opacity-50  focus:text-pink-300 text-lg font-semibold font-serif">Study</button>
-                                    <!-- Dropdown menu -->
-                                    <div id="dropdownNavbar"
-                                        class="hidden max-w-max  h-auto bg-slate-100 text-base z-10 list-none divide-y divide-gray-100 rounded shadow  w-full">
-                                        <ul class="" aria-labelledby="dropdownLargeButton">
-                                            <li>
-                                                <div class="p-2 shadow-md">
-                                                    <div class="inline-grid">
-                                                        <a href="#">
-                                                            <h1 class="text-base text-pink-300 px-4 py-2">Study Option
-                                                            </h1>
-                                                        </a>
-                                                        <a href="#"
-                                                            class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Degree</a>
-                                                        <a href="#"
-                                                            class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Diploma</a>
-                                                    </div>
-                                                    <div class="inline-grid">
-                                                        <br>
-                                                        <a href="#"
-                                                            class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Qualification
-                                                            Check</a>
-                                                        <a href="#"
-                                                            class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Application</a>
-                                                        <a href="#"
-                                                            class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Fee
-                                                            & Scholarship</a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar2"
-                                        class="p-4 mt-6 border-b-8 border-pink-300 border-opacity-0 hover:border-opacity-100 hover:text-pink-300 duration-200 cursor-pointer focus:border-opacity-100 focus:opacity-50 focus:text-blue-500 text-lg font-semibold font-serif">Student</button>
-                                    <!-- Dropdown menu -->
-                                    <div id="dropdownNavbar2"
-                                        class="hidden max-w-max  h-auto bg-slate-100 text-base z-10 list-none divide-y divide-gray-100 rounded shadow  w-full">
-                                        <ul class="" aria-labelledby="dropdownLargeButton">
-                                            <li>
-                                                <div class="p-2 shadow-md">
-                                                    <div class="inline-grid">
-                                                        <a href="#">
-                                                            <h1 class="text-base text-pink-300 px-4 py-2">Student</h1>
-                                                        </a>
-                                                        <a href="#"
-                                                            class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Intranet</a>
-                                                        <a href="#"
-                                                            class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Campus
-                                                            Life</a>
-                                                    </div>
-                                                    <div class="inline-grid">
-                                                        <a href="#">
-                                                            <h1 class="text-base text-pink-300 px-4 py-2">Alumni</h1>
-                                                        </a>
-                                                        <a href="#"
-                                                            class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Program
-                                                            Offer</a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar3"
-                                        class="p-4 mt-6 border-b-8 border-pink-300 border-opacity-0 hover:border-opacity-100 hover:text-pink-300 duration-200 cursor-pointer focus:border-opacity-100 focus:opacity-50 focus:text-pink-300 text-lg font-semibold font-serif">University</button>
-                                    <!-- Dropdown menu -->
-                                    <div id="dropdownNavbar3"
-                                        class="hidden max-w-max  h-auto bg-slate-100 text-base z-10 list-none divide-y divide-gray-100 rounded shadow  w-full">
-                                        <ul class="" aria-labelledby="dropdownLargeButton">
-                                            <li>
-                                                <div class="p-2 shadow-md">
-                                                    <div class="inline-grid">
-                                                        <a href="#">
-                                                            <h1 class="text-base text-pink-300 px-4 py-2">Main Campus
-                                                            </h1>
-                                                        </a>
-                                                        <a href="#"
-                                                            class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Kuala
-                                                            Lumpur Campus</a>
-                                                        <br>
-                                                        <a href="#"
-                                                            class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Program
-                                                            Comparison</a>
-                                                    </div>
-                                                    <div class="inline-grid">
-                                                        <a href="#">
-                                                            <h1 class="text-base text-pink-300 px-4 py-2 w-25">Branch
-                                                                Campus
-                                                            </h1>
-                                                        </a>
-                                                        <a href="#"
-                                                            class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Penang</a>
-                                                        <a href="#"
-                                                            class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Perak</a>
-                                                        <a href="#"
-                                                            class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Johor</a>
-                                                        <a href="#"
-                                                            class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Pahang</a>
-                                                        <a href="#"
-                                                            class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Sabah</a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar4"
-                                        class="p-4 mt-6 border-b-8 border-pink-300 border-opacity-0 hover:border-opacity-100 hover:text-pink-300 duration-200 cursor-pointer focus:border-opacity-100 focus:opacity-50 focus:text-pink-300 text-lg font-semibold font-serif">About</button>
-                                    <!-- Dropdown menu -->
-                                    <div id="dropdownNavbar4"
-                                        class="hidden max-w-max  h-auto bg-slate-100 text-base z-10 list-none divide-y divide-gray-100 rounded shadow  w-full">
-                                        <ul class="" aria-labelledby="dropdownLargeButton">
-                                            <li>
-                                                <div class="p-2 shadow-md">
-                                                    <div class="inline-grid">
-                                                        <a href="#"
-                                                            class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">History</a>
-                                                        <a href="#"
-                                                            class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Milestone</a>
-                                                    </div>
-                                                    <div class="inline-grid">
-                                                        <a href="#"
-                                                            class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Staff
-                                                            Directory</a>
-                                                        <a href="#"
-                                                            class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Job
-                                                            offer</a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar5"
-                                        class="p-4 mt-6 border-b-8 border-pink-300 border-opacity-0 hover:border-opacity-100 hover:text-pink-300 duration-200 cursor-pointer focus:border-opacity-100 focus:opacity-50 focus:text-pink-300 text-lg font-semibold font-serif">Keep
-                                        In Touch</button>
-                                    <!-- Dropdown menu -->
-                                    <div id="dropdownNavbar5"
-                                        class="hidden max-w-max  h-auto bg-slate-100 text-base z-10 list-none divide-y divide-gray-100 rounded shadow  w-full">
-                                        <ul class="" aria-labelledby="dropdownLargeButton">
-                                            <li>
-                                                <div class="p-2 shadow-md">
-                                                    <div class="inline-grid">
-                                                        <a href="#">
-                                                            <h1 class="text-base text-pink-300 px-4 py-2">Contact</h1>
-                                                        </a>
-                                                        <a href="#"
-                                                            class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">tel</a>
-                                                        <a href="#"
-                                                            class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Facebook</a>
-                                                        <a href="#"
-                                                            class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Instagram</a>
-                                                        <a href="#"
-                                                            class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">Youtube</a>
-                                                        <a href="#"
-                                                            class="text-sm underline underline-offset-4 text-neutral-600 opacity-50 text-current hover:opacity-100 px-4 pb-2">WeiBo</a>
-                                                    </div>
-                                                    <div class="inline-grid">
-                                                        <h1 class="text-base text-pink-300 px-4 py-2"><i
-                                                                class="fas fa-map"></i> Main Campus Address</h1>
-                                                        <p
-                                                            class="text-sm text-neutral-600 opacity-100 text-current hover:opacity-100 px-4 pb-2">
-                                                            Ground Floor, <br> Bangunan Tan Sri Khaw Kai Boh (Block
-                                                            A),<br>
-                                                            Jalan Genting Kelang, Setapak, <br>53300 Kuala Lumpur, <br>
-                                                            Federal Territory of Kuala Lumpur</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <!-- Button trigger modal -->
-                                    <button
-                                        class="p-5 mt-6 border-b-8 border-pink-300 border-opacity-0 hover:border-opacity-100 hover:text-pink-300 duration-200 cursor-pointer focus:border-opacity-100 focus:opacity-50 focus:text-pink-300 text-lg font-semibold"
-                                        type="button" data-te-toggle="modal" data-te-target="#rightTopModal"
-                                        data-te-ripple-init data-te-ripple-color="light">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="hover:fill-pink-300" height="1em"
-                                            viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                            <path
-                                                d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z" />
-                                        </svg>
-                                    </button>
-
-                                    <!-- Modal top right-->
-                                    <div>
-                                        <div data-te-modal-init
-                                            class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
-                                            id="rightTopModal" tabindex="-1" aria-labelledby="rightTopModalLabel"
-                                            aria-hidden="true">
-                                            <div data-te-modal-dialog-ref
-                                                class="pointer-events-none absolute right-7 h-auto w-full translate-x-[100%] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px]">
-                                                <div
-                                                    class="min-[576px]:shadow-[0_0.5rem_1rem_rgba(#000, 0.15)] pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
-                                                    <div
-                                                        class="flex flex-shrink-0 items-center justify-between rounded-t-md bg-blue-100 p-4 dark:border-b dark:border-neutral-500 dark:bg-transparent">
-                                                        <h5 class="text-xl font-medium leading-normal text-black"
-                                                            id="rightTopModalLabel">
-                                                            Visitor's IP Address
-                                                        </h5>
-                                                        <button type="button"
-                                                            class="box-content rounded-none border-none text-black hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
-                                                            data-te-modal-dismiss aria-label="Close">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                viewBox="0 0 24 24" stroke-width="1.5"
-                                                                stroke="currentColor" class="h-6 w-6">
-                                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                                    d="M6 18L18 6M6 6l12 12" />
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                    <div class="relative flex flex-auto p-4" data-te-modal-body-ref>
-                                                        <table border="1" cellpadding="5">
-                                                            <tr>
-                                                                <td><strong>IP Address</strong></td>
-                                                                <td id="ip"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><strong>ISP</strong></td>
-                                                                <td id="isp"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><strong>City</strong></td>
-                                                                <td id="city"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><strong>Country</strong></td>
-                                                                <td id="country"></td>
-                                                            </tr>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-            </nav>
+<body> 
+    <header></header>
+    <!-- Jumbotron -->
+    <div class="relative max-w-full mx-auto overflow-hidden bg-cover bg-no-repeat p-12 text-center" 
+    style="background-image: url('img/ProgramImg/headerBackground.jpg'); height: 300px">
+    <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed" style="background-color: rgba(0, 0, 0, 0.6)">
+        <div class="flex h-full items-center justify-center">
+            <div class="text-white">
+                <h1 class="mb-4 text-6xl font-semibold">Program Comparison</h1>
+            </div>
         </div>
-    </header>
-    <main class="mx-20">
-        <h1 class="pt-6 display-5 my-5 text-center text-blue-600 text-2xl font-bold">Program Comparison</h1>
+    </div>
+    </div>
+    <main class="mx-20 mt-6">
         <!--Navigate Bar-->
         <div class="mx-4">
             <ul
-                class="flex flex-wrap  text-sm font-medium text-center text-black border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
+                class="flex flex-wrap  text-sm font-medium text-center text-black border-b border-blue-200 dark:border-blue-700 dark:text-gray-400">
                 <li class="mr-2" id="diplomaListItem">
                     <a href="#" onclick="determineDatabase('diplomaListItem', event)" aria-current="page"
-                        class="inline-block p-4 text-blue-600 bg-gray-100 rounded-t-lg active dark:bg-gray-800 dark:text-blue-500 ease-out duration-300 hover:ease-in">Diploma</a>
+                        class="inline-block p-6 text-base uppercase text-pink-600 bg-gray-100 rounded-t-lg active dark:bg-slate-900 dark:text-pink-500 ease-out duration-300 hover:ease-in">Diploma</a>
                     <div></div>
                 </li>
                 <li class="mr-2" id="bachelorListItem">
                     <a href="#" onclick="determineDatabase('bachelorListItem', event)"
-                        class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300 ease-out duration-300 hover:ease-in">Bachelor
+                        class="inline-block p-6 text-base uppercase rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300 ease-out duration-300 hover:ease-in">Bachelor
                         Degree</a>
                 </li>
             </ul>
         </div>
         <div class="container">
-            <div class="col-md-9 mx-auto p-6">
+            <div class="col-md-9 mx-auto px-6 py-8">
                 <div class="table-responsive">
                     <table id="courseTable"
                         class="max-w-fit  min-w-fit p-6 text-sm mb-8 text-left text-black dark:text-gray-600 table p-2">
-                        <tr class="bg-light p-6 ">
-                            <th class="max-w-fit  min-w-10">Select Product</th>
+                        <tr class="bg-light p-6 pb-4">
+                            <th class="max-w-fit  min-w-10 text-base uppercase font-bold">Select Program</th>
                             <th class="item-center justify-center px-4">
-                                <select class="form-control min w-full h-auto p-1" id="select1"
+                                <select class="form-control text-base min w-full h-auto p-1 text-sky-600 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-sky-600 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer" id="select1"
                                     onchange="item1(this.value)">
-                                    <option value="0">-- Select anything --</option>
+                                    <option value="0">--- Select Program ---</option>
 
                                 </select>
                             </th>
                             <th class="item-center justify-center px-4">
-                                <select class="form-control min w-full h-auto p-1" id="select2"
+                                <select class="form-control text-base min w-full h-auto p-1 text-sky-600 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-sky-600 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer" id="select2"
                                     onchange="item2(this.value)">
-                                    <option value="0">-- Select anything --</option>
+                                    <option value="0">--- Select Program ---</option>
 
                                 </select>
                             </th>
@@ -353,153 +80,61 @@
                             <th></th>
                             <td>
                                 <div class="flex item-center justify-center max-w-fit  min-w-min">
-                                    <img id="img1" src="img/CS.jpeg" class="object-contain h-48 w-96" alt="">
+                                    <img id="img1" src="img/ProgramImg/selectProgram.png" class="object-contain h-48 w-96" alt="">
                                 </div>
                             </td>
                             <td class="justify-center">
                                 <div class="flex justify-center items-center  max-w-fit  min-w-min">
-                                    <img id="img2" src="img/IS.jpg" class="object-contain h-48 w-96" alt="">
+                                    <img id="img2" src="img/ProgramImg/selectProgram.png" class="object-contain h-48 w-96" alt="">
                                 </div>
                             </td>
                         </tr>
                         <tr id="categories" class="p-10" style="display:none">
-                            <th class="py-4">categories</th>
-                            <td class="px-4" id="categories1">N/A</td>
-                            <td class="px-4" id="categories2">N/A</td>
+                            <th class="py-4 text-base uppercase font-bold">Categories</th>
+                            <td class="px-4 font-medium" id="categories1">N/A</td>
+                            <td class="px-4 font-medium" id="categories2">N/A</td>
                         </tr>
                         <tr class="p-6">
-                            <th class="py-4">Program Name</th>
-                            <td class="px-4" id="programName1">Computer Science</td>
-                            <td class="px-4" id="programName2">Information Systems</td>
+                            <th class="py-4 text-base uppercase font-bold">Program Name</th>
+                            <td class="px-4 font-medium" id="programName1">N/A</td>
+                            <td class="px-4 font-medium" id="programName2">N/A</td>
                         </tr>
                         <tr class="p-6">
-                            <th class="py-4">Campus or Branch</th>
-                            <td class="px-4" id="Campus1">KL,PG,JH</td>
-                            <td class="px-4" id="Campus2">KL,PG,PK</td>
+                            <th class="py-4 text-base uppercase font-bold">Campus or Branch</th>
+                            <td class="px-4 font-medium" id="Campus1">N/A</td>
+                            <td class="px-4 font-medium" id="Campus2">N/A</td>
                         </tr>
                         <tr>
-                            <th class="py-4">Total Fee</th>
-                            <td class="px-4" id="totalFee1">RM17,800</td>
-                            <td class="px-4" id="totalFee2">RM17,800</td>
+                            <th class="py-4 text-base uppercase font-bold">Total Fee</th>
+                            <td class="px-4 font-medium" id="totalFee1">N/A</td>
+                            <td class="px-4 font-medium" id="totalFee2">N/A</td>
                         </tr>
                         <tr>
-                            <th class="py-4 w-1/3">Career</th>
-                            <td class="px-4 w-1/3 text-justify" id="career1">
-                                Junior Analyst Programmers, Junior Systems Analysts, Junior Software Engineers,
-                                Junior Systems Engineers, Junior Research Officers, Junior Quantitative Analysts, Junior
-                                Software Developers
+                            <th class="py-4 w-1/3 text-base uppercase font-bold">Career</th>
+                            <td class="px-4 w-1/3 text-justify font-medium" id="career1">
+                                N/A
                             </td>
-                            <td class="px-4 w-1/3 text-justify" id="career2">
-                                Junior Programmers, Junior Systems Analysts, Junior SAP Support Consultants,
-                                Junior IT Support Executives, Junior IT Executives
+                            <td class="px-4 w-1/3 text-justify font-medium" id="career2">
+                                N/A
                             </td>
                         </tr>
                     </table>
                 </div>
             </div>
         </div>
-
-
+        <script src="comparison.js"></script>
     </main>
+    <!-- Button trigger modal -->
+    <button type="button" data-te-toggle="modal" data-te-target="#rightTopModal" data-te-ripple-init data-te-ripple-color="light"></button>
     <!--footer-->
     <footer class="text-center shadow-md bg-black lg:text-left font-mono"></footer>
-    <!-- Button trigger modal -->
-    <button type="button" data-te-toggle="modal" data-te-target="#rightTopModal" data-te-ripple-init
-        data-te-ripple-color="light"></button>
     <!-- Link to tailwind -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-
     <!-- Link to Tailwind Elements -->
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
-    <script src="progOverview.js"></script>
     <script src="ipAPI.js"></script>
-    <script src="comparison.js"></script>
+    
     <script>
-        const diplomaLink = document.getElementById('diplomaListItem');
-        const bachelorLink = document.getElementById('bachelorListItem');
-        const categoriesDisply = document.getElementById('categories');
-        const select1 = document.getElementById("select1");
-        const select2 = document.getElementById("select2");
-        let study = "";
-
-        diplomaLink.addEventListener('click', () => exchangeClasses('diplomaListItem', 'bachelorListItem'));
-        bachelorLink.addEventListener('click', () => exchangeClasses('bachelorListItem', 'diplomaListItem'));
-
-        // Function to exchange Tailwind CSS classes between two list items when one is clicked
-        function exchangeClasses(item1Id, item2Id) {
-            const item1 = document.getElementById(item1Id);
-            const item2 = document.getElementById(item2Id);
-
-            // Get the classes of the two items
-            const item1Classes = item1.querySelector('a').getAttribute('class');
-            const item2Classes = item2.querySelector('a').getAttribute('class');
-
-            // Set the classes of the two items to exchange their styles
-            item1.querySelector('a').setAttribute('class', item2Classes);
-            item2.querySelector('a').setAttribute('class', item1Classes);
-        }
-
-        // Event listener for categoriesDisplay
-        document.getElementById('diplomaListItem').addEventListener('click', function (event) {
-            if (categoriesDisply.style.display === 'table-row') {
-                categoriesDisply.style.display = categoriesDisply.style.display === 'none' ? 'table-row' : 'none';
-            }
-            study = "diploma";
-            console.log("study set to diploma:", study); // Log the value of study
-            determineStudy(study);
-        });
-
-        // Event listener for categoriesDisplay
-        document.getElementById('bachelorListItem').addEventListener('click', function (event) {
-            if (categoriesDisply.style.display === 'none') {
-                categoriesDisply.style.display = 'table-row';
-            }
-
-            study = "degree";
-            console.log("study set to degree:", study); // Log the value of study
-            determineStudy(study);
-        });
-
-        function determineStudy(study) {
-            console.log("determineStudy called with study value:", study); // Log the value of study when the function is called
-            let htmlOptions = ""; // Create an empty string to store the HTML options
-            for (var i = 0; i < courseDB.length; i++) {
-                var studyDB = courseDB[i].Study;
-                if (study === studyDB) {
-                    htmlOptions += `<option value="${i}">${courseDB[i].programName}</option>`;
-                }
-            }
-
-            select1.innerHTML = htmlOptions;
-            console.log("select1.innerHTML set to:", htmlOptions); // Log the value of select1.innerHTML
-            select2.innerHTML = htmlOptions;
-            console.log("select2.innerHTML set to:", htmlOptions); // Log the value of select2.innerHTML
-            // Set the innerHTML once after building all options
-        }
-
-        function item1(a) {
-            var course = courseDB[parseInt(a)]; // Parse a to an integer
-            document.getElementById("img1").src = course.programImg;
-            document.getElementById("categories1").innerHTML = course.categories;
-            document.getElementById("programName1").innerHTML = course.programName;
-            document.getElementById("Campus1").innerHTML = course.campus;
-            document.getElementById("totalFee1").innerHTML = course.totalFee;
-            document.getElementById("career1").innerHTML = course.Career;
-        }
-
-        function item2(a) {
-            var course = courseDB[parseInt(a)]; // Parse a to an integer
-            document.getElementById("img2").src = course.programImg;
-            document.getElementById("categories2").innerHTML = course.categories;
-            document.getElementById("programName2").innerHTML = course.programName;
-            document.getElementById("Campus2").innerHTML = course.campus;
-            document.getElementById("totalFee2").innerHTML = course.totalFee;
-            document.getElementById("career2").innerHTML = course.Career;
-        }
-
-        // Call the initializePage function when the page is loaded
-        window.addEventListener('load', determineStudy("diploma"));
-
     </script>
 
 </body>
