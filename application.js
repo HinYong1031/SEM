@@ -14,7 +14,9 @@ if (selectedProgram) {
     if (studyLevel == "Bachelor") {
         level.value = "Degree";
     }
-
+    if (studyLevel == "Diploma") {
+        level.value = "Diploma";
+    }
 
     console.log('Study level selected: ' + level.value);
     console.log('Program selected: ' + selectedProgram);
