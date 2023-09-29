@@ -110,7 +110,7 @@ const bot = function () {
         restartButton.classList.add('restart');
         restartButton.addEventListener('click', handleRestart);
 
-        container.appendChild(restartButton);
+       container.appendChild(restartButton);
 
         startConversation();
     };
